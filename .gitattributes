@@ -1,6 +1,18 @@
 * text=auto
+*.md text eol=lf
 *.py text eol=lf
 *.java text eol=lf
+*.go text eol=lf
 *.lua text eol=lf
-*.md text eol=lf
 *.json text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=lf
+*.cmd text eol=crlf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Imported snapshots and build inputs use byte-level SHA-256 pins.
+# Preserve their original UTF-8 bytes, including existing line endings.
+online/** -text
+local-mode/** -text
+experiments/** -text

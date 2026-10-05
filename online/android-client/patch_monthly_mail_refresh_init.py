@@ -1,0 +1,69 @@
+"""Append the reviewed monthly-card/mail listener to the active startup Lua."""
+
+from __future__ import annotations
+
+import hashlib
+from pathlib import Path
+
+import UnityPy
+
+
+HERE = Path(__file__).resolve().parent
+BLOBS = HERE.parent / "热更新测试" / "主线热更候选" / "blobs"
+BASE_BUNDLE = "7eedd74aa0e7306864a44fbe405f087d8c2cc709e9aa8ea13014c1656ae38a05"
+BASE_OBJECT = "3ec93b9fe2808c658d0f0343df12e4dc9b723b7d554f4ff410d00baee5b7c47c"
+BASE_SCRIPT = "b27908b1b606f5bf59e7ecb8fdf66c348b3307d0e1e11897f8a070f3b8841823"
+SOURCE = HERE / "lua" / "init-monthly-mail-refresh.lua"
+
+
+def digest(raw: bytes) -> str:
+    return hashlib.sha256(raw).hexdigest()
+
+
+def patch() -> tuple[str, int]:
+    raw = (BLOBS / BASE_BUNDLE).read_bytes()
+    if digest(raw) != BASE_BUNDLE:
+        raise ValueError("Reviewed sequence-20 Lua bundle changed")
+    block = SOURCE.read_text(encoding="utf-8")
+    if ("ONLINE_MONTH_CARD_MAIL_REFRESH" not in block
+            or "MailFatchAll" not in block
+            or "UpdateBeat:Add(function()" not in block):
+        raise ValueError("Monthly-mail startup listener is incomplete")
+
+    bundle = UnityPy.load(raw)
+    before = {obj.path_id: digest(obj.get_raw_data()) for obj in bundle.objects}
+    found = [obj for obj in bundle.objects if obj.type.name == "TextAsset"
+             and obj.read_typetree().get("m_Name") == "init.lua"]
+    if len(found) != 1 or before[found[0].path_id] != BASE_OBJECT:
+        raise ValueError("Reviewed init.lua object is missing")
+    target = found[0]
+    tree = target.read_typetree()
+    old = tree.get("m_Script")
+    if (not isinstance(old, str) or digest(old.encode("utf-8")) != BASE_SCRIPT
+            or "ONLINE_MONTH_CARD_MAIL_REFRESH" in old):
+        raise ValueError("Reviewed startup script changed")
+    expected = old + "\n" + block
+    tree["m_Script"] = expected
+    target.save_typetree(tree)
+    output = bundle.file.save(packer="original")
+    check = UnityPy.load(output)
+    after = {obj.path_id: digest(obj.get_raw_data()) for obj in check.objects}
+    if (set(before) != set(after)
+            or {key for key in before if before[key] != after[key]} != {target.path_id}):
+        raise ValueError("Unrelated Unity objects changed")
+    matching = [obj for obj in check.objects if obj.path_id == target.path_id]
+    if len(matching) != 1 or matching[0].read_typetree().get("m_Script") != expected:
+        raise ValueError("Patched Lua failed round-trip")
+    sha = digest(output)
+    path = BLOBS / sha
+    if path.exists():
+        if digest(path.read_bytes()) != sha:
+            raise ValueError("Content-addressed blob is occupied")
+    else:
+        path.write_bytes(output)
+    return sha, len(output)
+
+
+if __name__ == "__main__":
+    sha, size = patch()
+    print("MONTHLY_MAIL_REFRESH_BUNDLE_OK", sha, size)

@@ -1,0 +1,10 @@
+{
+  "source": "D:\\Project\\资料-魔女兵器\\提取资源\\assets1\\assetbundle\\config\\lesson\\sentence_10001.ab",
+  "sourceSHA256": "43fdbfa6d05c65b8520969bc1df2219a4f9f8e9426333fcf934fd3d95ea088fa",
+  "decodedSHA256": "29d7ea848840b6642f5f3f6048d824e4ba44010a0b517fbe1b0a284debb6e0df",
+  "isEncrypt": 1,
+  "transformation": "Unity AB → MonoBehaviour.bytes → XOR 0xff（isEncrypt=1 时）→ UTF-8 → 简体中文第3列；去除旧NGUI颜色标签，展开换行",
+  "storyId": "opening-10001",
+  "lineCount": 9,
+  "scope": "仅使用用户提供原始资源中实际存在的章节；未补造缺失剧情。"
+}

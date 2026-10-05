@@ -1,0 +1,66 @@
+--- a/online/legacy-server/src/com/codex/witchweapon/LocalSave.java
++++ b/online/legacy-server/src/com/codex/witchweapon/LocalSave.java
+@@ -759,6 +759,11 @@
+            identity.equals(state.optString("lastCscCommitIdentity","")) &&
+             state.has("lastCscCommitResponse"))
+             return Base64.decode(state.getString("lastCscCommitResponse"),Base64.DEFAULT);
++        // A late unsettled CSC request must not close or reward a newly
++        // entered stone slate. Already committed CSC retries above are read-only.
++        if(state.optBoolean("active",false) &&
++            StoneSlateBattle.contains(state.optLong("activeStage",0)))
++            throw new IOException("Maze settlement superseded by stone slate");
+         BarrierLabyrinth.requireCurrentStage(state,args.get("levelid"));
+         int round=state.optInt("mazeRound",1);
+         if(round<1 || round>12 || state.optInt("mazePreparedRound",0)!=round ||
+@@ -880,6 +885,12 @@
+         if(staminaChanged || caphChanged)
+             commit(refreshed);
+         if(path.startsWith("/game/"))path=path.substring(5);
++        if(path.equals("/challenge/combat/victory") || path.equals("/challenge/combat/cancel")){
++            StoneSlateBattle.Settlement settlement=StoneSlateBattle.bundled().settle(state,args,now,
++                path.equals("/challenge/combat/cancel"));
++            if(settlement.next!=null)commit(settlement.next);
++            return settlement.response;
++        }
+         if(path.equals("/time/getStamina"))return sync(now).bytes();
+         if(path.equals("/resource/buy/stamina")){
+             JSONObject next=new JSONObject(state.toString());
+@@ -1089,6 +1100,9 @@
+             return new ProtoWire().text(1,"ok").bytes();
+         }
+         if(path.equals("/combat/role/info")||path.equals("/challenge/combat/role/info")){
++            if(path.equals("/challenge/combat/role/info") &&
++                StoneSlateBattle.contains(state.optLong("activeStage",0)))
++                return StoneSlateBattle.bundled().role(state,args,seed,catalog);
+             JSONObject next=new JSONObject(state.toString());
+             CosmeticUnlocks.rememberFashion(next,catalog,args);
+             if(path.equals("/challenge/combat/role/info")){
+@@ -1219,6 +1233,7 @@
+             r.set(107,state.optLong("stamina",200))
+                 .set(108,StaminaRecovery.protocolTime(state,now))
+                 .set(121,state.optLong("activityStamina",200)).set(122,now);
++            r.set(117,r.number(117,0)|StoneSlateBattle.challengeBits(state));
+             r.set(118,selectedCosmetic("curHead",DEFAULT_HEAD)).set(119,selectedCosmetic("curHeadBox",DEFAULT_HEAD_BOX));
+             r.set(123,selectedCosmetic("curTitle",(int)r.number(123,0)));
+             JSONObject unlocked=state.optJSONObject("roleUnlocks");
+@@ -1253,7 +1268,7 @@
+                         now,stages.openAllMainline());
+                     progress=all.bytes();
+                 }
+-                return progress;
++                return StoneSlateBattle.bundled().progress(progress,state);
+             }
+             ProtoWire m=ProtoWire.parse(seed);
+             for(ProtoWire.Field f:m.fields)if(f.number==1&&f.type==2){
+@@ -1315,6 +1330,11 @@
+                 }
+             }
+             long stage=num(args,"instanceid",STAGE);
++            if(StoneSlateBattle.contains(stage)){
++                JSONObject next=StoneSlateBattle.bundled().begin(state,stage,args,now);
++                if(next!=state)commit(next);
++                return seed;
++            }
+             if(dailyBattles!=null && dailyBattles.supports(stage)){
+                 JSONObject next=dailyBattles.begin(state,stage,args,now,
+                     stages!=null && stages.openAllMainline());

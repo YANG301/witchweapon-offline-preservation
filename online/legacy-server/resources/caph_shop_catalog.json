@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "source": "Original APK CN/channel-25 Vip structure",
+  "inputs": {
+    "shopstructure.txt": "341d72f29dcb5e3cd26fa69121815ab007424a1cc078a01dd3da1640b45a4a9f",
+    "shopbigset.txt": "8f6f0c84576b108f5e60655a33a4aceff002de2b878b7254507fbe5c30e432d3",
+    "shopset.txt": "15de9814a75d829856c2614a09ffbe14ee76be7f9bc5f56ffca6df65fedf3dfb",
+    "shop.txt": "3b9cf2b954ff5fac21196950ccc4f948c85016a09bde3485e64474b6253d0838",
+    "goods.txt": "b3cc78cb1fbcd14e8fd618903bac955d6ba0c97e9fbe1cf2cc883fe2bd74457c"
+  },
+  "bigSetId": 47000009,
+  "setId": 44000017,
+  "shops": [
+    {
+      "id": 4502080001,
+      "levelMin": 1,
+      "levelMax": 100,
+      "priceType": 8,
+      "goods": [
+        {
+          "id": 45030183,
+          "type": 3,
+          "itemId": 40510004,
+          "value": 1,
+          "price": 6000,
+          "stock": 1
+        },
+        {
+          "id": 45030184,
+          "type": 3,
+          "itemId": 40510005,
+          "value": 1,
+          "price": 6000,
+          "stock": 1
+        },
+        {
+          "id": 45030185,
+          "type": 3,
+          "itemId": 40510006,
+          "value": 1,
+          "price": 6000,
+          "stock": 1
+        },
+        {
+          "id": 45030186,
+          "type": 3,
+          "itemId": 40510007,
+          "value": 1,
+          "price": 6000,
+          "stock": 1
+        },
+        {
+          "id": 45030187,
+          "type": 3,
+          "itemId": 40510008,
+          "value": 1,
+          "price": 6000,
+          "stock": 1
+        },
+        {
+          "id": 45030188,
+          "type": 3,
+          "itemId": 40510009,
+          "value": 1,
+          "price": 6000,
+          "stock": 1
+        }
+      ]
+    },
+    {
+      "id": 4502080002,
+      "levelMin": 1,
+      "levelMax": 100,
+      "priceType": 8,
+      "goods": [
+        {
+          "id": 45030189,
+          "type": 3,
+          "itemId": 40330001,
+          "value": 1,
+          "price": 350,
+          "stock": 0
+        },
+        {
+          "id": 45030190,
+          "type": 3,
+          "itemId": 40340001,
+          "value": 1,
+          "price": 4000,
+          "stock": 0
+        }
+      ]
+    },
+    {
+      "id": 4502080003,
+      "levelMin": 1,
+      "levelMax": 100,
+      "priceType": 8,
+      "goods": [
+        {
+          "id": 45130012,
+          "type": 13,
+          "itemId": 0,
+          "value": 10000,
+          "price": 500,
+          "stock": 0
+        }
+      ]
+    }
+  ],
+  "policy": "Original event opening schedule absent; preservation server exposes fixed point shelf"
+}

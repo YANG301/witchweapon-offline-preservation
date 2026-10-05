@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'none'">
+  <title>魔女兵器 · 数据管理</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  <script src="./data-manager.js" defer></script>
+  <script src="./mail-center.js" defer></script>
+  <script src="./server-monitor.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">W<span>W</span></div>
+        <div>
+          <h1>魔女兵器 <span class="build-tag">v7</span></h1>
+          <p class="eyebrow">WITCH WEAPON / 数据管理</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span class="service-status" id="service-status"><span class="status-dot"></span><span id="status-text">等待连接</span></span>
+        <button class="button button-quiet" id="lock-button" type="button" hidden>锁定</button>
+      </div>
+    </header>
+
+    <section class="auth-wrap" id="auth-view" aria-labelledby="auth-title">
+      <div class="auth-card">
+        <p class="kicker">管理入口</p>
+        <h2 id="auth-title">管理员登录</h2>
+        <p class="muted auth-copy">管理玩家档案、备份成长记录，通过邮件中心发送通知与物资。</p>
+        <form id="auth-form" name="admin-login" autocomplete="on">
+          <div class="auth-field">
+            <label for="admin-username">用户名</label>
+            <input id="admin-username" name="username" type="text" autocomplete="username" autocapitalize="off" spellcheck="false" required maxlength="64" value="admin" aria-describedby="auth-error">
+          </div>
+          <div class="auth-field">
+            <label for="admin-password">密码</label>
+            <div class="password-field">
+              <input id="admin-password" name="password" type="password" autocomplete="current-password" autocapitalize="off" spellcheck="false" required placeholder="输入密码" aria-describedby="auth-error">
+              <button class="button button-quiet reveal" id="reveal-password" type="button" aria-label="显示密码">显示</button>
+            </div>
+          </div>
+          <p class="error-message" id="auth-error" role="alert" hidden></p>
+          <button class="button button-primary auth-submit" id="auth-submit" type="submit">进入后台 <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="auth-footnote">仅限管理员使用 · 所有修改均写入服务器存档</p>
+      </div>
+      <div class="auth-aside" aria-hidden="true">
+        <p class="eyebrow">WITCH WEAPON / ARCHIVE</p>
+        <h2>故事未完，<br>记录<span>仍在延续。</span></h2>
+        <p class="auth-aside-copy">从一份玩家档案开始。<br>查询、调整与备份，都有清晰的去处。</p>
+        <div class="auth-features"><span>01 <strong>玩家档案</strong></span><span>02 <strong>备份与恢复</strong></span><span>03 <strong>邮件中心</strong></span></div>
+      </div>
+    </section>
+
+    <section id="dashboard-view" class="dashboard" aria-label="数据概览" hidden>
+      <nav class="admin-section-nav" aria-label="后台管理模块">
+        <button class="admin-section-button active" type="button" data-admin-section="players" aria-pressed="true">玩家档案 <small>查询 · 修改 · 备份</small></button>
+        <button class="admin-section-button" type="button" data-admin-section="mail" aria-pressed="false">邮件中心 <small>单人 · 批量 · 全服</small></button>
+        <button class="admin-section-button" type="button" data-admin-section="monitor" aria-pressed="false">服务器监控 <small>资源 · 趋势 · 告警</small></button>
+      </nav>
+      <aside id="monitor-global-alert" class="monitor-global-alert" role="alert" aria-atomic="true" hidden><div><strong id="monitor-global-title"></strong><p id="monitor-global-detail"></p></div><button id="monitor-open-alert" class="button button-secondary button-small" type="button">查看监控</button></aside>
+      <section id="players-view" aria-label="玩家档案管理">
+      <div class="page-heading">
+        <div>
+          <p class="kicker">PLAYER ARCHIVES</p>
+          <h2>玩家档案</h2>
+          <p class="muted">找到玩家，查询资源，整理每一份成长记录。</p>
+        </div>
+        <button class="button button-secondary" id="refresh-button" type="button">刷新数据</button>
+      </div>
+
+      <div class="metrics" aria-label="账号统计">
+        <article class="metric"><span>账号总数</span><strong id="total-accounts">—</strong><small>已注册账号</small></article>
+        <article class="metric"><span>当前结果</span><strong id="visible-accounts">—</strong><small>符合筛选条件</small></article>
+        <article class="metric metric-hint"><span>修改流程</span><strong>编辑 · 预览 · 保存</strong><small>保存前自动备份，草稿不会直接写入游戏</small></article>
+      </div>
+
+      <div class="workspace">
+        <section class="panel account-panel" aria-labelledby="accounts-title">
+          <div class="panel-heading">
+            <div><p class="kicker">账号目录</p><h3 id="accounts-title">选择玩家</h3></div>
+            <span class="count-pill" id="list-count">—</span>
+          </div>
+          <form class="search" id="search-form" role="search">
+            <label for="account-search" class="sr-only">按玩家 RID、邮箱或账号 ID 搜索</label>
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="account-search" type="search" autocomplete="off" placeholder="按玩家 RID、邮箱或账号 ID 搜索">
+            <button class="button button-small" type="submit">搜索</button>
+          </form>
+          <details class="account-filter-disclosure"><summary>筛选与排序</summary><div class="account-filters" aria-label="账号筛选">
+            <div><label for="account-search-field">搜索范围</label><select id="account-search-field"><option value="all">全部字段</option><option value="rid">玩家 RID</option><option value="email">邮箱</option><option value="id">账号 ID</option></select></div>
+            <div><label for="account-verified">邮箱验证</label><select id="account-verified"><option value="all">全部账号</option><option value="yes">已验证</option><option value="no">未验证</option></select></div>
+            <div><label for="account-sort">账号排序</label><select id="account-sort"><option value="rid_desc">RID 从大到小</option><option value="rid_asc">RID 从小到大</option></select></div>
+            <div><label for="account-page-size">每页显示</label><select id="account-page-size"><option value="20">20 个</option><option value="50">50 个</option><option value="100" selected>100 个</option><option value="200">200 个</option></select></div>
+            <button class="button button-quiet button-small" id="reset-account-filters" type="button">重置筛选</button>
+          </div></details>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col">账号</th><th scope="col">邮箱验证</th><th scope="col" class="table-action">查看</th></tr></thead>
+              <tbody id="account-rows"></tbody>
+            </table>
+            <div class="empty-state" id="list-empty" hidden>暂无账号</div>
+          </div>
+          <div class="pager">
+            <span id="page-info">—</span>
+            <div><button class="button button-quiet button-small" id="prev-page" type="button" disabled>上一页</button><button class="button button-quiet button-small" id="next-page" type="button" disabled>下一页</button></div>
+          </div>
+        </section>
+
+        <section class="panel detail-panel" aria-labelledby="detail-title">
+          <div class="panel-heading">
+            <div><p class="kicker">PLAYER WORKSPACE</p><h3 id="detail-title">玩家工作台</h3></div>
+            <span class="detail-chip" id="detail-chip">未选择</span>
+          </div>
+          <div class="detail-placeholder" id="detail-placeholder">
+            <div class="placeholder-art" aria-hidden="true">◇</div>
+            <strong>选择一名玩家</strong>
+            <span>从左侧账号列表打开角色与存档信息。</span>
+          </div>
+          <div id="detail-content" hidden>
+            <div class="identity-card">
+              <div class="avatar" id="detail-avatar" aria-hidden="true">W</div>
+              <div class="identity-copy"><span class="identity-label">当前玩家</span><h4 id="detail-name">—</h4><p id="detail-email">—</p><code id="detail-id">—</code></div>
+            </div>
+            <details class="profile-overview"><summary>账号与角色摘要</summary><dl class="facts" id="detail-facts"></dl></details>
+            <nav class="manager-tabs" aria-label="玩家管理功能">
+              <button class="manager-tab active" type="button" data-manager-tab="data" aria-pressed="true">数据与资源</button>
+              <button class="manager-tab" type="button" data-manager-tab="backups" aria-pressed="false">备份与恢复 <span id="backup-count"></span></button>
+              <button class="manager-tab" type="button" data-manager-tab="mail" aria-pressed="false">游戏邮件</button>
+            </nav>
+            <section id="data-panel" class="manager-panel" aria-label="玩家数据编辑">
+              <div class="manager-toolbar"><div><strong id="save-revision">正在读取存档…</strong><small id="save-read-at">—</small></div><button class="button button-secondary button-small" id="save-reload" type="button">读取最新</button></div>
+              <div class="manager-live"><label><input id="save-auto-refresh" type="checkbox">每 15 秒检查更新</label><span id="save-dirty-count">没有未保存的修改</span></div>
+              <p class="manager-notice" id="save-notice" role="status" hidden></p>
+              <div class="data-search"><label for="field-search">查询玩家数据</label><input id="field-search" type="search" placeholder="搜索道具、魔女名称、关卡或 ID" autocomplete="off"></div>
+              <div id="field-groups" class="field-groups" aria-label="数据分类"></div>
+              <div class="category-heading"><div><h4 id="data-category-title">基础资料</h4><p id="data-category-description">选择分类查看玩家数据。</p></div><span id="data-results-summary" role="status"></span></div>
+              <section id="maze-state-panel" class="maze-state-panel" aria-labelledby="maze-state-title" hidden>
+                <div class="maze-state-heading"><div><p class="kicker">LABYRINTH / SAVED STATE</p><h4 id="maze-state-title">本轮迷宫状态</h4></div><span id="maze-state-status" class="detail-chip">等待读取</span></div>
+                <p id="maze-state-read-at" class="maze-state-caption">—</p>
+                <dl id="maze-state-facts" class="maze-state-facts"></dl>
+                <details id="maze-state-teams" class="maze-state-teams"><summary>查看挑战名单、出战队伍与跨层能量</summary><div class="maze-squads"><section><div class="maze-squad-heading"><h5>挑战名单</h5><span id="maze-roster-count">— / 12</span></div><div id="maze-roster-list" class="maze-squad-list"></div></section><section><div class="maze-squad-heading"><h5>单场出战队伍</h5><span id="maze-party-count">— / 4</span></div><div id="maze-party-list" class="maze-squad-list"></div></section></div><section class="maze-energy-section"><div class="maze-squad-heading"><h5>跨层魔女能量</h5><span>0–1000</span></div><div id="maze-energy-list" class="maze-energy-list"></div><p class="input-help">只展示已保存的跨层能量，缺失记录显示 —；与战斗画面中的武器魔力刻度分别统计。</p></section></details>
+                <p id="maze-state-note" class="maze-state-note"></p>
+              </section>
+              <form id="data-form" autocomplete="off">
+                <div id="save-fields" class="save-fields"></div>
+                <div class="draft-footer"><div class="data-reason"><label for="data-reason">修改说明</label><textarea id="data-reason" minlength="8" maxlength="200" placeholder="说明这次修改的用途（8–200 字）"></textarea></div>
+                <p class="error-message" id="data-error" role="alert" hidden></p><p class="success-message" id="data-success" role="status" hidden></p>
+                <div class="data-actions"><button class="button button-primary" id="data-preview" type="submit" disabled>预览修改 <span aria-hidden="true">↗</span></button><button class="button button-quiet" id="data-reset" type="button" disabled>撤销输入</button></div></div>
+              </form>
+              <section id="change-review" class="change-review" aria-label="确认数据修改" hidden><h4>本次修改</h4><p id="change-review-note" class="muted"></p><div id="change-review-list"></div><button class="button button-primary" id="data-commit" type="button">备份并保存</button><button class="button button-quiet" id="data-cancel" type="button">继续编辑</button></section>
+              <details id="save-readonly-disclosure" class="readonly-save"><summary>只读数据与内部状态</summary><p class="input-help">身份、结算、迷宫本轮状态和共享记录由游戏服务维护。完整存档可从“备份与恢复”导出。</p><pre id="save-readonly"></pre></details>
+            </section>
+            <section id="backups-panel" class="manager-panel" aria-label="备份与恢复" hidden>
+              <div class="manager-toolbar"><div><strong>玩家存档备份</strong><small>手动备份与每次管理修改前的快照</small></div><button class="button button-secondary button-small" id="backup-reload" type="button">刷新列表</button></div>
+              <p class="edit-note backup-note">备份保存完整存档，可下载到电脑。网页恢复仅覆盖预览中的可编辑字段；本轮迷宫楼层、编队、生命与能量、宝箱和重置记录保持当前。恢复前自动备份并核对版本。</p>
+              <form id="backup-form"><label for="backup-reason">备份说明</label><input id="backup-reason" type="text" minlength="8" maxlength="200" placeholder="例如：调整角色资源前的手动备份"><button class="button button-primary" id="backup-create" type="submit" disabled>立即备份</button></form>
+              <p class="error-message" id="backup-error" role="alert" hidden></p><p class="success-message" id="backup-success" role="status" hidden></p>
+              <div id="backup-list" class="backup-list"><p class="muted">正在读取备份…</p></div>
+              <section id="restore-review" class="change-review" aria-label="恢复备份确认" hidden><h4>恢复预览</h4><p id="restore-info" class="muted"></p><div id="restore-changes"></div><p class="input-help" id="restore-retained"></p><label for="restore-reason">恢复原因</label><textarea id="restore-reason" minlength="8" maxlength="200" placeholder="说明需要恢复这份备份的原因"></textarea><button class="button button-primary" id="restore-commit" type="button">备份当前数据并恢复</button><button class="button button-quiet" id="restore-cancel" type="button">取消</button></section>
+            </section>
+            <form id="edit-form" autocomplete="off" hidden>
+              <p class="edit-note">只开放下列字段。保存后写入服务器，游戏内重新读取数据后生效。</p>
+              <div class="edit-grid">
+                <div>
+                  <label for="edit-name">APK 游戏昵称</label>
+                  <input id="edit-name" name="name" type="text" maxlength="32" autocomplete="off" disabled>
+                  <small class="input-help">修改 APK 游戏角色名称；Unity 试验角色不会同步更名</small>
+                </div>
+                <div>
+                  <label for="edit-gold">金币</label>
+                  <input id="edit-gold" name="gold" type="number" min="0" max="1000000000" step="1" inputmode="numeric" disabled>
+                  <small class="input-help">非负整数，最高 10 亿</small>
+                </div>
+                <div class="wide">
+                  <label for="edit-reason">修改原因</label>
+                  <textarea id="edit-reason" name="reason" minlength="8" maxlength="200" placeholder="简要说明修改原因（8–200 字）" disabled></textarea>
+                  <small class="input-help">管理操作会保留服务端审计记录</small>
+                </div>
+              </div>
+              <p class="error-message" id="edit-error" role="alert" hidden></p>
+              <p class="success-message" id="edit-success" role="status" hidden></p>
+              <div class="edit-actions"><button class="button button-primary" id="save-button" type="submit" disabled>保存更改</button><button class="button button-quiet" id="reset-button" type="button" disabled>撤销输入</button></div>
+            </form>
+            <section id="mail-panel" aria-label="发送游戏邮件" hidden><div class="section-label">发送游戏邮件</div><p class="edit-note">批量与全服投递、发送记录和任务控制，请使用独立邮件中心。<button class="button button-secondary button-small" id="open-mail-center" type="button">打开邮件中心</button></p>
+            <form id="mail-form" autocomplete="off">
+              <p class="edit-note">收件人：<strong id="mail-recipient">—</strong>。邮件会进入该玩家的原版游戏信箱，附件由玩家在游戏内领取。</p>
+              <div class="edit-grid">
+                <div>
+                  <label for="mail-sender">发件人</label>
+                  <input id="mail-sender" name="sender" type="text" maxlength="24" value="新丰洲" disabled>
+                </div>
+                <div>
+                  <label for="mail-title">邮件标题</label>
+                  <input id="mail-title" name="title" type="text" maxlength="60" placeholder="例如：新丰洲补给" disabled>
+                </div>
+                <div class="wide">
+                  <label for="mail-content">邮件正文</label>
+                  <textarea id="mail-content" name="content" maxlength="1000" placeholder="玩家在原版信箱中看到的内容" disabled></textarea>
+                </div>
+                <div class="wide">
+                  <div class="mail-attachment-heading"><label>附件物资（最多 5 项）</label><button class="button button-secondary button-small" id="mail-add-attachment" type="button" disabled>添加物资</button></div>
+                  <div id="mail-attachments" class="mail-attachments"></div>
+                  <small class="input-help">金币、钻石可直接选择；物品和装备按原版资源目录选择。背包已满时，材料邮件会保留待领取。</small>
+                </div>
+                <div class="wide">
+                  <label for="mail-reason">管理员操作原因</label>
+                  <textarea id="mail-reason" name="reason" minlength="8" maxlength="200" placeholder="仅供服务端审计，玩家看不到（8–200 字）" disabled></textarea>
+                </div>
+              </div>
+              <p class="error-message" id="mail-error" role="alert" hidden></p>
+              <p class="success-message" id="mail-success" role="status" hidden></p>
+              <div class="edit-actions"><button class="button button-primary" id="mail-send-button" type="submit" disabled>发送给所选玩家</button><button class="button button-quiet" id="mail-reset-button" type="button" disabled>清空邮件</button></div>
+            </form>
+            </section>
+          </div>
+        </section>
+      </div>
+      </section>
+      <section id="mail-center-view" class="mail-center-view" aria-labelledby="mail-center-title" hidden>
+  <div class="page-heading"><div><p class="kicker">MAIL CENTER</p><h2 id="mail-center-title">邮件中心</h2><p class="muted">编写通知与奖励邮件，按固定收件名单投递，随时查看每一封的发送结果。</p></div><button id="campaign-history-reload" class="button button-secondary" type="button">刷新任务</button></div>
+  <div class="mail-center-workspace">
+    <section class="panel mail-center-composer" aria-labelledby="campaign-compose-title">
+      <div class="panel-heading"><div><p class="kicker">COMPOSE</p><h3 id="campaign-compose-title">创建邮件任务</h3></div><span class="count-pill" id="campaign-draft-state">未提交</span></div>
+      <form id="campaign-form" class="mail-center-form" autocomplete="off">
+        <section class="mail-center-section">
+          <h4>01 / 收件范围</h4>
+          <label for="campaign-recipient-mode">发送对象</label><select id="campaign-recipient-mode"><option value="selected">指定玩家</option><option value="filter">按账号条件筛选</option><option value="all">全服已创建角色的玩家</option></select>
+          <p class="muted mail-center-help" id="campaign-target-help">查询后选择玩家；玩家 RID 会解析为账号 ID，预览时再核对收件资格。</p><p class="muted mail-center-help">每个任务最多核对 5,000 个账号。全服包含离线玩家；邮件进入游戏信箱，附件由玩家领取。</p>
+          <div id="campaign-filter-controls" class="mail-center-grid" hidden>
+            <div><label for="campaign-filter-field">搜索字段</label><select id="campaign-filter-field"><option value="all">全部字段</option><option value="rid">玩家 RID</option><option value="email">邮箱</option><option value="id">账号 ID</option></select></div>
+            <div><label for="campaign-filter-verified">邮箱验证</label><select id="campaign-filter-verified"><option value="all">全部</option><option value="yes">已验证</option><option value="no">未验证</option></select></div>
+            <div class="wide"><label for="campaign-filter-query">搜索条件</label><input id="campaign-filter-query" type="search" placeholder="与账号目录使用相同筛选规则" maxlength="128"></div>
+          </div>
+          <div id="campaign-selection-controls">
+            <div class="mail-center-selection-search"><select id="campaign-account-field" aria-label="查询玩家的字段"><option value="rid">玩家 RID</option><option value="id">账号 ID</option><option value="email">邮箱</option><option value="all">全部字段</option></select><input id="campaign-account-query" type="search" placeholder="输入玩家 RID 查找" maxlength="128" aria-label="查询玩家"><button id="campaign-account-search" class="button button-secondary" type="button">查询</button></div>
+            <p id="campaign-selection-error" class="error-message" role="alert" hidden></p><div id="campaign-account-results" class="mail-center-account-results"></div><div id="campaign-selected-accounts" class="mail-center-selected" aria-label="已选收件人"></div>
+          </div>
+        </section>
+        <section class="mail-center-section">
+          <h4>02 / 邮件内容</h4>
+          <div class="mail-center-grid"><div><label for="campaign-sender">发件人</label><input id="campaign-sender" value="新丰洲" maxlength="24" required></div><div><label for="campaign-template">标题模板</label><select id="campaign-template"><option value="">自定义邮件</option><option value="维护通知">维护通知</option><option value="版本更新">版本更新</option><option value="活动通知">活动通知</option><option value="补偿说明">补偿说明</option></select></div><div class="wide"><label for="campaign-title">邮件标题</label><input id="campaign-title" maxlength="60" required placeholder="玩家在游戏信箱中看到的标题"></div><div class="wide"><label for="campaign-content">正文</label><textarea id="campaign-content" rows="5" maxlength="1000" required placeholder="输入完整说明，可换行"></textarea></div></div>
+        </section>
+        <section class="mail-center-section">
+          <div class="mail-center-section-heading"><h4>03 / 附件物资</h4><button id="campaign-add-attachment" class="button button-secondary button-small" type="button">添加附件</button></div><p class="muted mail-center-help">最多 5 种物资，每位收件人得到相同附件；不添加附件也可发送通知。</p><div id="campaign-attachments" class="mail-center-attachments"></div><p id="campaign-catalog-status" class="muted mail-center-help" role="status"></p>
+        </section>
+        <section class="mail-center-section"><h4>04 / 操作记录</h4><label for="campaign-reason">发送原因</label><textarea id="campaign-reason" rows="2" minlength="8" maxlength="200" required placeholder="至少 8 个字，说明通知或奖励发放的依据"></textarea></section>
+        
+        <div class="mail-center-form-actions"><button id="campaign-preview-button" class="button button-primary" type="submit">预览收件名单与邮件</button><button id="campaign-reset-button" class="button button-quiet" type="button">清空草稿</button></div>
+      </form>
+      <div class="campaign-feedback"><p id="campaign-error" class="error-message" role="alert" hidden></p><p id="campaign-success" class="success-message" role="status" hidden></p></div>
+      <section id="campaign-review" class="campaign-review" aria-labelledby="campaign-review-title" hidden>
+        <p class="kicker">REVIEW</p><h4 id="campaign-review-title">核对后创建投递任务</h4><div id="campaign-review-summary" class="campaign-review-summary"></div><article class="campaign-mail-preview"><span id="campaign-review-sender"></span><h5 id="campaign-review-mail-title"></h5><p id="campaign-review-content"></p><div id="campaign-review-attachments"></div></article><p id="campaign-review-reason" class="muted"></p><div id="campaign-review-recipients" class="mail-center-review-recipients"></div><p class="muted mail-center-help">收件名单在本次预览时固定。后续新注册账号不会追加；已送达的邮件无法撤回。</p><label for="campaign-confirmation">请输入上方收件人数，确认向这些玩家投递</label><input id="campaign-confirmation" inputmode="numeric" autocomplete="off" placeholder="输入收件人数"><p id="campaign-review-expiry" class="muted mail-center-help"></p><div class="mail-center-form-actions"><button id="campaign-create-button" class="button button-primary" type="button" disabled>确认创建投递任务</button><button id="campaign-review-back" class="button button-quiet" type="button">返回修改</button></div>
+      </section>
+      <section id="campaign-pending" class="campaign-pending" role="status" hidden><h4>提交结果尚未确认</h4><p>已保留原请求编号。请查询结果或原样重试，避免重复创建邮件。</p><code id="campaign-pending-id"></code><div class="mail-center-form-actions"><button id="campaign-pending-check" class="button button-secondary" type="button">查询提交结果</button><button id="campaign-pending-retry" class="button button-secondary" type="button">按原请求重试</button></div></section>
+    </section>
+    <section class="panel mail-center-history" aria-labelledby="campaign-history-title"><div class="panel-heading"><div><p class="kicker">DELIVERY TASKS</p><h3 id="campaign-history-title">投递记录</h3></div><span class="count-pill" id="campaign-history-count">—</span></div><p id="campaign-history-error" class="error-message" role="alert" hidden></p><div id="campaign-history-list" class="campaign-history-list"></div><div class="pager"><span id="campaign-history-page">最近创建的任务</span><div><button id="campaign-history-prev" class="button button-quiet button-small" type="button" disabled>上一页</button><button id="campaign-history-next" class="button button-quiet button-small" type="button" disabled>下一页</button></div></div></section>
+  </div>
+  <section id="campaign-detail" class="panel campaign-detail" aria-labelledby="campaign-detail-title" hidden><div class="panel-heading"><div><p class="kicker">TASK DETAIL</p><h3 id="campaign-detail-title">投递任务详情</h3><small id="campaign-detail-id"></small></div><button id="campaign-detail-reload" class="button button-secondary" type="button">刷新详情</button></div><div class="campaign-detail-body"><div id="campaign-detail-stats" class="campaign-detail-stats"></div><p id="campaign-detail-note" class="muted"></p><article class="campaign-mail-preview"><span id="campaign-detail-sender"></span><h4 id="campaign-detail-mail-title"></h4><p id="campaign-detail-content"></p><div id="campaign-detail-attachments"></div></article><p id="campaign-detail-reason" class="muted"></p><div id="campaign-detail-actions" class="mail-center-form-actions"></div><p id="campaign-detail-error" class="error-message" role="alert" hidden></p><div class="campaign-recipient-heading"><h4>逐人投递结果</h4><select id="campaign-recipient-status" aria-label="筛选投递状态"><option value="all">全部收件人</option><option value="sent">已送达</option><option value="pending">等待投递</option><option value="sending">正在核对投递</option><option value="skipped">已跳过</option><option value="failed">投递失败</option><option value="canceled">已取消</option></select></div><div class="campaign-recipient-wrap"><table class="campaign-recipient-table"><thead><tr><th scope="col">玩家</th><th scope="col">投递状态</th><th scope="col">结果说明</th></tr></thead><tbody id="campaign-recipient-rows"></tbody></table></div><div class="pager"><span id="campaign-recipient-page">—</span><div><button id="campaign-recipient-prev" class="button button-quiet button-small" type="button" disabled>上一页</button><button id="campaign-recipient-next" class="button button-quiet button-small" type="button" disabled>下一页</button></div></div></div></section>
+</section>
+
+      <section id="server-monitor-view" class="server-monitor-view" aria-labelledby="monitor-title" hidden>
+        <div class="page-heading"><div><p class="kicker">SERVER MONITOR</p><h2 id="monitor-title">服务器监控</h2><p class="muted">查看资源余量与近期变化，及时发现服务器压力。</p></div><button id="monitor-refresh" class="button button-secondary" type="button">立即刷新</button></div>
+        <div class="monitor-toolbar"><span id="monitor-overall-status" class="monitor-status" data-level="pending">等待采集</span><p id="monitor-update-time">尚未读取服务器数据</p><span id="monitor-refresh-state">页面可见时每 5 秒刷新</span></div>
+        <p id="monitor-data-warning" class="monitor-data-warning" role="status" hidden></p>
+        <div class="monitor-cards" aria-label="服务器资源使用情况">
+          <article id="monitor-cpu-card" class="panel monitor-card" data-level="pending"><div class="monitor-card-heading"><h3>CPU</h3><span id="monitor-cpu-state">等待采集</span></div><strong id="monitor-cpu-value" class="monitor-value">—</strong><progress id="monitor-cpu-meter" max="100" aria-label="CPU 使用率"></progress><p id="monitor-cpu-detail">尚未采集</p><small>高使用率持续 30 秒后报警</small></article>
+          <article id="monitor-memory-card" class="panel monitor-card" data-level="pending"><div class="monitor-card-heading"><h3>内存</h3><span id="monitor-memory-state">等待采集</span></div><strong id="monitor-memory-value" class="monitor-value">—</strong><progress id="monitor-memory-meter" max="100" aria-label="内存使用率"></progress><p id="monitor-memory-detail">尚未采集</p><small>可用内存包含系统可回收缓存</small></article>
+          <article id="monitor-disk-card" class="panel monitor-card" data-level="pending"><div class="monitor-card-heading"><h3>根磁盘 <small>/</small></h3><span id="monitor-disk-state">等待采集</span></div><strong id="monitor-disk-value" class="monitor-value">—</strong><progress id="monitor-disk-meter" max="100" aria-label="根磁盘使用率"></progress><p id="monitor-disk-detail">尚未采集</p><small>可用容量按普通进程统计，已用包含系统保留空间</small></article>
+        </div>
+        <section class="panel monitor-storage-panel" aria-labelledby="monitor-storage-title">
+          <div class="panel-heading"><div><p class="kicker">GAME STORAGE</p><h3 id="monitor-storage-title">魔女兵器占用分布</h3></div><span id="monitor-storage-state" class="monitor-storage-state" data-status="unavailable">尚未统计</span></div>
+          <div class="monitor-storage-workspace">
+            <div class="monitor-storage-summary"><span id="monitor-storage-total-label">游戏相关磁盘占用</span><strong id="monitor-storage-total">—</strong><p id="monitor-storage-ratio">占整盘容量 —</p><div class="monitor-storage-scope"><p id="monitor-storage-sampled-at">尚无统计时间</p><span>服务器每 5 分钟汇总一次</span></div><p id="monitor-storage-summary-note">等待读取游戏目录占用。</p></div>
+            <div id="monitor-storage-items" class="monitor-storage-items" aria-label="游戏相关磁盘占用分类"></div>
+          </div>
+          <p id="monitor-storage-notice" class="monitor-storage-notice" role="status" hidden></p>
+          <div class="monitor-storage-notes"><p>分类横条表示占已统计游戏占用的比例。按实际分配空间统计，包含目录元数据；硬链接去重，文件数为去重后的普通文件数。</p><p>仅统计明确归属游戏的目录。共享 systemd 日志无法准确分摊，未计入；分布每 5 分钟更新，与实时磁盘读数时间不同，不能相减来计算系统其它占用。</p></div>
+        </section>
+        <div class="monitor-trends">
+          <section class="panel monitor-trend-panel" aria-labelledby="monitor-cpu-trend-title"><div class="panel-heading"><div><p class="kicker">CPU TREND</p><h3 id="monitor-cpu-trend-title">CPU 使用趋势</h3></div><span class="monitor-trend-window">最近 5 分钟</span></div><div class="monitor-chart-wrap"><svg id="monitor-cpu-chart" class="monitor-chart" viewBox="0 0 640 220" role="img" aria-labelledby="monitor-cpu-trend-title monitor-cpu-chart-summary"><desc id="monitor-cpu-chart-summary">尚未采集 CPU 趋势数据。</desc></svg><p id="monitor-cpu-chart-empty" class="monitor-chart-empty">等待 CPU 采样</p></div><div class="monitor-chart-footer"><span id="monitor-cpu-trend-start">5 分钟前</span><span id="monitor-cpu-trend-current">当前 —</span></div></section>
+          <section class="panel monitor-trend-panel" aria-labelledby="monitor-memory-trend-title"><div class="panel-heading"><div><p class="kicker">MEMORY TREND</p><h3 id="monitor-memory-trend-title">内存使用趋势</h3></div><span class="monitor-trend-window">最近 5 分钟</span></div><div class="monitor-chart-wrap"><svg id="monitor-memory-chart" class="monitor-chart" viewBox="0 0 640 220" role="img" aria-labelledby="monitor-memory-trend-title monitor-memory-chart-summary"><desc id="monitor-memory-chart-summary">尚未采集内存趋势数据。</desc></svg><p id="monitor-memory-chart-empty" class="monitor-chart-empty">等待内存采样</p></div><div class="monitor-chart-footer"><span id="monitor-memory-trend-start">5 分钟前</span><span id="monitor-memory-trend-current">当前 —</span></div></section>
+        </div>
+        <section class="panel monitor-alert-panel" aria-labelledby="monitor-alert-title"><div class="panel-heading"><div><p class="kicker">RESOURCE ALERTS</p><h3 id="monitor-alert-title">当前告警</h3></div><span id="monitor-alert-count" class="count-pill">等待采集</span></div><div id="monitor-alert-list" class="monitor-alert-list" aria-live="polite"><p class="monitor-alert-empty">读取数据后显示资源状态。</p></div><div class="monitor-thresholds"><strong>告警规则</strong><p>CPU 使用率持续 30 秒达到 80% 提醒、95% 严重告警；内存达到 85% 提醒、95% 严重告警；根磁盘达到 80% 提醒、90% 严重告警。采集失败、网络断开或数据超过 20 秒未更新时，立即提示无法确认状态。</p><p>趋势仅保留在当前页面内存，最多 60 个采样点；刷新页面或退出后台后清除。此处监控资源状态，告警不会自动重启或修改游戏服务。</p></div></section>
+      </section>
+      <footer class="footer">魔女兵器在线版 · 玩家数据与邮件管理后台</footer>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

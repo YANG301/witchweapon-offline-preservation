@@ -1,0 +1,3230 @@
+{
+  "schemaVersion": 1,
+  "source": "preserved CN original client tables",
+  "sourceSha256": {
+    "dictionary.tsv": "74206b0c254ab4187b12be46b1b9fb1c48984bd5aef38b3ecf4c6df1e3dfc759",
+    "servant.txt": "9a2e655accc4c8787109f23d42a64db21cd8c2ea62ed8d26f0277492fc3e033b",
+    "servantclient.txt": "d71f4cb5f1b8a5430bbf7ce8412a52ae25f28c9a14cc800b0259121bafdab501",
+    "item.txt": "74df3a598acb1e0d52ef95439bb3486406dcbce40334848f27ec14c4f4c8e3ce",
+    "servantequip.txt": "433b5826e8fe0ab86def966a0d65bbe288f7ea996703b54e3bedf991110ef474",
+    "servantequipclient.txt": "8a9c84adf801b0be22f5de41928d4b0941f9c822e4447e5902aef2f0936a6655",
+    "offline_responses.json": "ad083d0024227bf3237cc282189641525b0195bfaa5b63fdd2af86f04d586b01"
+  },
+  "servants": {
+    "10010001": {
+      "name": "塞拉伊诺"
+    },
+    "10010101": {
+      "name": "雾夕"
+    },
+    "10010201": {
+      "name": "艾米莉欧"
+    },
+    "10010301": {
+      "name": "薇拉"
+    },
+    "10010401": {
+      "name": "拉斐尔"
+    },
+    "10010501": {
+      "name": "高崎明良"
+    },
+    "10010601": {
+      "name": "安妮"
+    },
+    "10010701": {
+      "name": "斯库尔德"
+    },
+    "10010801": {
+      "name": "倪克斯"
+    },
+    "10010901": {
+      "name": "榴榴"
+    },
+    "10011001": {
+      "name": "海因里希"
+    },
+    "10011101": {
+      "name": "圣莫里斯"
+    },
+    "10011201": {
+      "name": "伊露卡"
+    },
+    "10011301": {
+      "name": "克劳迪娅"
+    },
+    "10011401": {
+      "name": "芩"
+    },
+    "10011501": {
+      "name": "贝阿特丽切"
+    },
+    "10011601": {
+      "name": "阿斯塔丽尔"
+    },
+    "10011701": {
+      "name": "爱丝提娜"
+    },
+    "10011801": {
+      "name": "赫莉"
+    },
+    "10011901": {
+      "name": "爱丽丝"
+    },
+    "10012001": {
+      "name": "索娅"
+    },
+    "10012101": {
+      "name": "星尘"
+    },
+    "10012201": {
+      "name": "杏"
+    },
+    "10012301": {
+      "name": "白烛"
+    },
+    "10012401": {
+      "name": "月言命"
+    },
+    "10012501": {
+      "name": "卡罗琳"
+    },
+    "10012701": {
+      "name": "虎千代"
+    },
+    "10012801": {
+      "name": "法贝拉"
+    },
+    "10012901": {
+      "name": "莉莉娅"
+    },
+    "10013001": {
+      "name": "巴巴罗萨"
+    },
+    "10013101": {
+      "name": "玉藻前"
+    },
+    "10013201": {
+      "name": "库泊佐娅"
+    },
+    "10013301": {
+      "name": "格兰瑞特"
+    },
+    "10013501": {
+      "name": "瑟蕾莎"
+    },
+    "10013701": {
+      "name": "星尘·Twinkle"
+    },
+    "10013801": {
+      "name": "伊莎贝尔"
+    },
+    "10013901": {
+      "name": "牛奶"
+    },
+    "10014001": {
+      "name": "伊娜菈"
+    },
+    "10014101": {
+      "name": "奥古斯塔"
+    },
+    "10014201": {
+      "name": "九月"
+    },
+    "10014301": {
+      "name": "薇莱克丝"
+    }
+  },
+  "items": {
+    "40130001": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130002": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130003": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130004": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130005": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130006": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130007": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130008": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130009": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130010": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130011": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130012": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130013": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130014": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130015": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130016": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130017": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130018": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130019": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130020": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130021": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130022": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130023": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130024": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130025": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130026": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130027": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130028": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130029": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130030": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130031": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130032": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130033": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130034": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130035": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130036": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130037": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130038": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130039": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130040": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130041": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130042": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130043": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130044": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130045": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130046": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40130047": {
+      "category": "魔女材料",
+      "quality": 3
+    },
+    "40220001": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220002": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220003": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220004": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220005": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220006": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220007": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220008": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220009": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220010": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220011": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220012": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220013": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220014": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220015": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220016": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220017": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220018": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220019": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40220020": {
+      "category": "兵器材料",
+      "quality": 2
+    },
+    "40230001": {
+      "category": "兵器材料",
+      "quality": 3
+    },
+    "40240001": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240002": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240003": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240004": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240005": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240006": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240007": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240008": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240009": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240010": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240011": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240012": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240013": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240014": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240015": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240016": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240017": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240018": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240019": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240020": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240021": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240022": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240023": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240024": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240025": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240026": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240027": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240028": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240029": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240030": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240031": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240032": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240033": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240034": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240035": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240036": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240037": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240038": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240039": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240040": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240041": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240042": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240043": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40240044": {
+      "category": "兵器材料",
+      "quality": 4
+    },
+    "40250001": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250002": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250003": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250004": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250005": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250006": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250007": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250008": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250009": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250010": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250011": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250012": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250013": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250014": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250015": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250016": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250017": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250018": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250019": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250020": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250021": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250022": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250023": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250024": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250025": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250026": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250027": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250028": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250029": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250030": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250031": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250032": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250033": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250034": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250035": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250036": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250037": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40250038": {
+      "category": "兵器材料",
+      "quality": 5
+    },
+    "40310001": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310002": {
+      "category": "消耗道具",
+      "quality": 2
+    },
+    "40310003": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310004": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40310005": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310006": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310007": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310008": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310009": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310010": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310011": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310012": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310013": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310014": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310015": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310016": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310017": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310018": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310019": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310020": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310021": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310022": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40310023": {
+      "category": "消耗道具",
+      "quality": 1
+    },
+    "40320001": {
+      "category": "消耗道具",
+      "quality": 2
+    },
+    "40320002": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40320003": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40320004": {
+      "category": "消耗道具",
+      "quality": 2
+    },
+    "40320005": {
+      "category": "消耗道具",
+      "quality": 2
+    },
+    "40330001": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330002": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40330003": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330004": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330005": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330006": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330007": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40330008": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330009": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330010": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330011": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40330012": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40330039": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330040": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330041": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330042": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330043": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330044": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330045": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330046": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330047": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330048": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330049": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330050": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330051": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330052": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330053": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330054": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330055": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330056": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330057": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330058": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330059": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330060": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330061": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330062": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330063": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330064": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330065": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330066": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330067": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330068": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330069": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330070": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330071": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330072": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330073": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330074": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330075": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330076": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330077": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330078": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330079": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330080": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330081": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330082": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330083": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330084": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330085": {
+      "category": "兵器宝箱",
+      "quality": 3
+    },
+    "40330086": {
+      "category": "兵器宝箱",
+      "quality": 3
+    },
+    "40330087": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330088": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330089": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330090": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330091": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330092": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330093": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330094": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330095": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330096": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330097": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330098": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40330099": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330100": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330101": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330102": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330103": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40330104": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330105": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330106": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330107": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330108": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330109": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330110": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330111": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330112": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330113": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330114": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330115": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330116": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330117": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330118": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40330119": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40340001": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340002": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40340003": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40340004": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40340005": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40340006": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40340007": {
+      "category": "兵器宝箱",
+      "quality": 4
+    },
+    "40340008": {
+      "category": "兵器宝箱",
+      "quality": 4
+    },
+    "40340009": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340010": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340011": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340012": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340013": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340014": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340015": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340016": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40340017": {
+      "category": "消耗道具",
+      "quality": 4
+    },
+    "40350001": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350002": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350003": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40350004": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40350005": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40350006": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40350007": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40350008": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40350009": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40350010": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40350011": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40350012": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40350013": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40350014": {
+      "category": "兵器宝箱",
+      "quality": 5
+    },
+    "40350015": {
+      "category": "兵器宝箱",
+      "quality": 5
+    },
+    "40350016": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350017": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350018": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350019": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350020": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350021": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350022": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40350023": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40430001": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430002": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430003": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430004": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430005": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430006": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430007": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430008": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430009": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430010": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430011": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430012": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430013": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430014": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430015": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430016": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430017": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430018": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430019": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430020": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430021": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430022": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430023": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40430024": {
+      "category": "激发核心",
+      "quality": 3
+    },
+    "40510001": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40510002": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40510003": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40510004": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40510005": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40510006": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40510007": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40510008": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40510009": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40530001": {
+      "category": "兑换凭证",
+      "quality": 3
+    },
+    "40530002": {
+      "category": "消耗道具",
+      "quality": 3
+    },
+    "40550001": {
+      "category": "消耗道具",
+      "quality": 5
+    },
+    "40550002": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40550003": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40550004": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40550005": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40550006": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40550007": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40550008": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40550009": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40550010": {
+      "category": "兑换凭证",
+      "quality": 5
+    },
+    "40910001": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40910002": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40920001": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40920002": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40920003": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40920004": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40920005": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40930001": {
+      "category": "礼包与宝箱",
+      "quality": 1
+    },
+    "40930002": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40930003": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930004": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40930005": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40930006": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930007": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930008": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930009": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930010": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930011": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930012": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930013": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930014": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930015": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930016": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930017": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930018": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930019": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930020": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930021": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40930022": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40940001": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940002": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940003": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940004": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940005": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940006": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940007": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940008": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940009": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940010": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940011": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940012": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940013": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940014": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940015": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940016": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940017": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940018": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940019": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940020": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940021": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940022": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940023": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940024": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940025": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940026": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940027": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940028": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940029": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40940030": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940031": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940032": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940033": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940034": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940035": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940036": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40940037": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950001": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950002": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950003": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950004": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950005": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950006": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950007": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950008": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950009": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950010": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950011": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950012": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950013": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950014": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950015": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950016": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950017": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950018": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950019": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950020": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950021": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950022": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950023": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950024": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40950025": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40950026": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40950027": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950028": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950029": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950030": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950031": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950032": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950033": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950034": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950035": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950036": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950037": {
+      "category": "礼包与宝箱",
+      "quality": 3
+    },
+    "40950038": {
+      "category": "礼包与宝箱",
+      "quality": 2
+    },
+    "40950039": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950040": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950041": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950042": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950043": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950044": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950045": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950046": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950047": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950048": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950049": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950050": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950051": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950052": {
+      "category": "礼包与宝箱",
+      "quality": 4
+    },
+    "40950053": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950054": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950055": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950056": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950057": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950058": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950059": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950060": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950061": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950062": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950063": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950064": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950065": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950066": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950067": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950068": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950069": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950070": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950071": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950072": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950073": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950074": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950075": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950076": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950077": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950078": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950079": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950080": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950081": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950082": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950083": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950084": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950085": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950086": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950087": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950088": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950089": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950090": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950091": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950092": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950093": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950094": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950095": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    },
+    "40950096": {
+      "category": "礼包与宝箱",
+      "quality": 5
+    }
+  },
+  "equips": {
+    "1411001": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411002": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411003": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411004": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411005": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411006": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411007": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411008": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411009": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411010": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411011": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411012": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411013": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411014": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411015": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411016": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411017": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1411018": {
+      "category": "魔女装备",
+      "quality": 1
+    },
+    "1421001": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421002": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421003": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421004": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421005": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421006": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421007": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421008": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421009": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421010": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421011": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421012": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421013": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421014": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1421015": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422001": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422002": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422003": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422004": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422005": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422006": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422007": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422008": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422009": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422010": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422011": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422012": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422013": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422014": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422015": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1422016": {
+      "category": "魔女装备",
+      "quality": 2
+    },
+    "1431001": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431002": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431003": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431004": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431005": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431006": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431007": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431008": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431009": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431010": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431011": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431012": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431013": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431014": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431015": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431016": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431017": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431018": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1431019": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432001": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432002": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432003": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432004": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432005": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432006": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432007": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432008": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432009": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432010": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1432011": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433001": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433002": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433003": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433004": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433005": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433006": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433007": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433008": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433009": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433010": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433011": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1433012": {
+      "category": "魔女装备",
+      "quality": 3
+    },
+    "1441001": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441002": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441003": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441004": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441005": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441006": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441007": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441008": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441009": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441010": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441011": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441012": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441013": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441014": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441015": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441016": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441017": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441018": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441019": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441020": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441021": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441022": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441023": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441024": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441025": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441026": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441027": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441028": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441029": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441030": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441031": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441032": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441033": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441034": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441035": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441036": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441037": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1441038": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442001": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442002": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442003": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442004": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442005": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442006": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442007": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442008": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442009": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442010": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1442011": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443001": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443002": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443003": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443004": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443005": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443006": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443007": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443008": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443009": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1443010": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444001": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444002": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444003": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444004": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444005": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444006": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444007": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444008": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444009": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444010": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1444011": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445001": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445002": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445003": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445004": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445005": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445006": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445007": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445008": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445009": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445010": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1445011": {
+      "category": "魔女装备",
+      "quality": 4
+    },
+    "1451001": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451002": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451003": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451004": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451005": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451006": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451007": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451008": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451009": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451010": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451011": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451012": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451013": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451014": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451015": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451016": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451017": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451018": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451019": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451020": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451021": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451022": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451023": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451024": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451025": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451026": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451027": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451028": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451029": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451030": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451031": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451032": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451033": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451034": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451035": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451036": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1451037": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453001": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453002": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453003": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453004": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453005": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453006": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453007": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453008": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453009": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1453010": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454001": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454002": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454003": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454004": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454005": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454006": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454007": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454008": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454009": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454010": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1454011": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455001": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455002": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455003": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455004": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455005": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455006": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455007": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455008": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455009": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455010": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455011": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1455012": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456001": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456002": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456003": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456004": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456005": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456006": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456007": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456008": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456009": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456010": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456011": {
+      "category": "魔女装备",
+      "quality": 5
+    },
+    "1456012": {
+      "category": "魔女装备",
+      "quality": 5
+    }
+  }
+}

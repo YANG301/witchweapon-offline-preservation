@@ -1,0 +1,4619 @@
+{
+  "schemaVersion": 1,
+  "source": "Original CN channel-25 resource/sundry/recharge tables",
+  "inputs": {
+    "shopstructure.txt": "341d72f29dcb5e3cd26fa69121815ab007424a1cc078a01dd3da1640b45a4a9f",
+    "shopbigset.txt": "8f6f0c84576b108f5e60655a33a4aceff002de2b878b7254507fbe5c30e432d3",
+    "shopset.txt": "15de9814a75d829856c2614a09ffbe14ee76be7f9bc5f56ffca6df65fedf3dfb",
+    "shop.txt": "3b9cf2b954ff5fac21196950ccc4f948c85016a09bde3485e64474b6253d0838",
+    "goods.txt": "b3cc78cb1fbcd14e8fd618903bac955d6ba0c97e9fbe1cf2cc883fe2bd74457c"
+  },
+  "sets": [
+    {
+      "id": 44000028,
+      "periodHours": 24,
+      "refreshCurrencyType": 50,
+      "refreshPrice": 0,
+      "refreshLimit": 0,
+      "shops": [
+        {
+          "id": 4502500004,
+          "shopType": 2,
+          "priceType": 50,
+          "randomNum": 0,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030268,
+              "type": 3,
+              "itemId": 40240040,
+              "value": 1,
+              "stock": 1,
+              "price": 50,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030269,
+              "type": 3,
+              "itemId": 40240041,
+              "value": 1,
+              "stock": 1,
+              "price": 50,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030270,
+              "type": 3,
+              "itemId": 40240042,
+              "value": 1,
+              "stock": 1,
+              "price": 50,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030271,
+              "type": 3,
+              "itemId": 40240043,
+              "value": 1,
+              "stock": 1,
+              "price": 50,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030272,
+              "type": 3,
+              "itemId": 40240044,
+              "value": 1,
+              "stock": 1,
+              "price": 50,
+              "goodsScore": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44000009,
+      "periodHours": 0,
+      "refreshCurrencyType": 50,
+      "refreshPrice": 0,
+      "refreshLimit": 0,
+      "shops": [
+        {
+          "id": 4502500001,
+          "shopType": 2,
+          "priceType": 50,
+          "randomNum": 0,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030125,
+              "type": 3,
+              "itemId": 40350003,
+              "value": 1,
+              "stock": 0,
+              "price": 26,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030124,
+              "type": 3,
+              "itemId": 40350004,
+              "value": 1,
+              "stock": 0,
+              "price": 260,
+              "goodsScore": 0
+            },
+            {
+              "id": 45130009,
+              "type": 13,
+              "itemId": 0,
+              "value": 10000,
+              "stock": 0,
+              "price": 5,
+              "goodsScore": 0
+            },
+            {
+              "id": 45130010,
+              "type": 13,
+              "itemId": 0,
+              "value": 110000,
+              "stock": 0,
+              "price": 45,
+              "goodsScore": 0
+            },
+            {
+              "id": 45130011,
+              "type": 13,
+              "itemId": 0,
+              "value": 1200000,
+              "stock": 0,
+              "price": 420,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030202,
+              "type": 3,
+              "itemId": 40340010,
+              "value": 1,
+              "stock": 0,
+              "price": 100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030256,
+              "type": 3,
+              "itemId": 40510003,
+              "value": 1,
+              "stock": 0,
+              "price": 40,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030267,
+              "type": 3,
+              "itemId": 40340001,
+              "value": 1,
+              "stock": 0,
+              "price": 30,
+              "goodsScore": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44000247,
+      "periodHours": 8,
+      "refreshCurrencyType": 50,
+      "refreshPrice": 10,
+      "refreshLimit": 30,
+      "shops": [
+        {
+          "id": 4501010003,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45020001,
+              "type": 2,
+              "itemId": 1421001,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020002,
+              "type": 2,
+              "itemId": 1421002,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020003,
+              "type": 2,
+              "itemId": 1421003,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020004,
+              "type": 2,
+              "itemId": 1421004,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020005,
+              "type": 2,
+              "itemId": 1421005,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020006,
+              "type": 2,
+              "itemId": 1421006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020007,
+              "type": 2,
+              "itemId": 1421007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020008,
+              "type": 2,
+              "itemId": 1421008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020009,
+              "type": 2,
+              "itemId": 1421009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020010,
+              "type": 2,
+              "itemId": 1421010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020011,
+              "type": 2,
+              "itemId": 1421011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020012,
+              "type": 2,
+              "itemId": 1421012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020013,
+              "type": 2,
+              "itemId": 1421013,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020014,
+              "type": 2,
+              "itemId": 1421014,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020015,
+              "type": 2,
+              "itemId": 1421015,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020016,
+              "type": 2,
+              "itemId": 1422001,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020017,
+              "type": 2,
+              "itemId": 1422002,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020018,
+              "type": 2,
+              "itemId": 1422003,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020019,
+              "type": 2,
+              "itemId": 1422004,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020020,
+              "type": 2,
+              "itemId": 1422005,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020021,
+              "type": 2,
+              "itemId": 1422006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020022,
+              "type": 2,
+              "itemId": 1422007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020023,
+              "type": 2,
+              "itemId": 1422008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020024,
+              "type": 2,
+              "itemId": 1422009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020025,
+              "type": 2,
+              "itemId": 1422010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020026,
+              "type": 2,
+              "itemId": 1422011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020027,
+              "type": 2,
+              "itemId": 1422012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020028,
+              "type": 2,
+              "itemId": 1422013,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020029,
+              "type": 2,
+              "itemId": 1422014,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020030,
+              "type": 2,
+              "itemId": 1422015,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020031,
+              "type": 2,
+              "itemId": 1422016,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030001,
+              "type": 3,
+              "itemId": 40220001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030002,
+              "type": 3,
+              "itemId": 40220002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030003,
+              "type": 3,
+              "itemId": 40220003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030004,
+              "type": 3,
+              "itemId": 40220004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030005,
+              "type": 3,
+              "itemId": 40220005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030006,
+              "type": 3,
+              "itemId": 40220006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030007,
+              "type": 3,
+              "itemId": 40220007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010004,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45020001,
+              "type": 2,
+              "itemId": 1421001,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020002,
+              "type": 2,
+              "itemId": 1421002,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020003,
+              "type": 2,
+              "itemId": 1421003,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020004,
+              "type": 2,
+              "itemId": 1421004,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020005,
+              "type": 2,
+              "itemId": 1421005,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020006,
+              "type": 2,
+              "itemId": 1421006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020007,
+              "type": 2,
+              "itemId": 1421007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020008,
+              "type": 2,
+              "itemId": 1421008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020009,
+              "type": 2,
+              "itemId": 1421009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020010,
+              "type": 2,
+              "itemId": 1421010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020011,
+              "type": 2,
+              "itemId": 1421011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020012,
+              "type": 2,
+              "itemId": 1421012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020013,
+              "type": 2,
+              "itemId": 1421013,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020014,
+              "type": 2,
+              "itemId": 1421014,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020015,
+              "type": 2,
+              "itemId": 1421015,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020016,
+              "type": 2,
+              "itemId": 1422001,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020017,
+              "type": 2,
+              "itemId": 1422002,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020018,
+              "type": 2,
+              "itemId": 1422003,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020019,
+              "type": 2,
+              "itemId": 1422004,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020020,
+              "type": 2,
+              "itemId": 1422005,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020021,
+              "type": 2,
+              "itemId": 1422006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020022,
+              "type": 2,
+              "itemId": 1422007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020023,
+              "type": 2,
+              "itemId": 1422008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020024,
+              "type": 2,
+              "itemId": 1422009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020025,
+              "type": 2,
+              "itemId": 1422010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020026,
+              "type": 2,
+              "itemId": 1422011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020027,
+              "type": 2,
+              "itemId": 1422012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020028,
+              "type": 2,
+              "itemId": 1422013,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020029,
+              "type": 2,
+              "itemId": 1422014,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020030,
+              "type": 2,
+              "itemId": 1422015,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020031,
+              "type": 2,
+              "itemId": 1422016,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030001,
+              "type": 3,
+              "itemId": 40220001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030002,
+              "type": 3,
+              "itemId": 40220002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030003,
+              "type": 3,
+              "itemId": 40220003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030004,
+              "type": 3,
+              "itemId": 40220004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030005,
+              "type": 3,
+              "itemId": 40220005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030006,
+              "type": 3,
+              "itemId": 40220006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030007,
+              "type": 3,
+              "itemId": 40220007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030008,
+              "type": 3,
+              "itemId": 40220008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030009,
+              "type": 3,
+              "itemId": 40220009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030010,
+              "type": 3,
+              "itemId": 40220010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030011,
+              "type": 3,
+              "itemId": 40220011,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030012,
+              "type": 3,
+              "itemId": 40220012,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030013,
+              "type": 3,
+              "itemId": 40220013,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030014,
+              "type": 3,
+              "itemId": 40220014,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030015,
+              "type": 3,
+              "itemId": 40220015,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030016,
+              "type": 3,
+              "itemId": 40220016,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030017,
+              "type": 3,
+              "itemId": 40220017,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030018,
+              "type": 3,
+              "itemId": 40220018,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030019,
+              "type": 3,
+              "itemId": 40220019,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010005,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45020001,
+              "type": 2,
+              "itemId": 1421001,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020002,
+              "type": 2,
+              "itemId": 1421002,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020003,
+              "type": 2,
+              "itemId": 1421003,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020004,
+              "type": 2,
+              "itemId": 1421004,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020005,
+              "type": 2,
+              "itemId": 1421005,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020006,
+              "type": 2,
+              "itemId": 1421006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020007,
+              "type": 2,
+              "itemId": 1421007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020008,
+              "type": 2,
+              "itemId": 1421008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020009,
+              "type": 2,
+              "itemId": 1421009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020010,
+              "type": 2,
+              "itemId": 1421010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020011,
+              "type": 2,
+              "itemId": 1421011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020012,
+              "type": 2,
+              "itemId": 1421012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020013,
+              "type": 2,
+              "itemId": 1421013,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020014,
+              "type": 2,
+              "itemId": 1421014,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020015,
+              "type": 2,
+              "itemId": 1421015,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030001,
+              "type": 3,
+              "itemId": 40220001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030002,
+              "type": 3,
+              "itemId": 40220002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030003,
+              "type": 3,
+              "itemId": 40220003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030004,
+              "type": 3,
+              "itemId": 40220004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030005,
+              "type": 3,
+              "itemId": 40220005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030006,
+              "type": 3,
+              "itemId": 40220006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030007,
+              "type": 3,
+              "itemId": 40220007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030008,
+              "type": 3,
+              "itemId": 40220008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030009,
+              "type": 3,
+              "itemId": 40220009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030010,
+              "type": 3,
+              "itemId": 40220010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030011,
+              "type": 3,
+              "itemId": 40220011,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030012,
+              "type": 3,
+              "itemId": 40220012,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030013,
+              "type": 3,
+              "itemId": 40220013,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030014,
+              "type": 3,
+              "itemId": 40220014,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030015,
+              "type": 3,
+              "itemId": 40220015,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030016,
+              "type": 3,
+              "itemId": 40220016,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030017,
+              "type": 3,
+              "itemId": 40220017,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030018,
+              "type": 3,
+              "itemId": 40220018,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030019,
+              "type": 3,
+              "itemId": 40220019,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030020,
+              "type": 3,
+              "itemId": 40240001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030021,
+              "type": 3,
+              "itemId": 40240002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030022,
+              "type": 3,
+              "itemId": 40240003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030023,
+              "type": 3,
+              "itemId": 40240004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030024,
+              "type": 3,
+              "itemId": 40240005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030025,
+              "type": 3,
+              "itemId": 40240006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030026,
+              "type": 3,
+              "itemId": 40240007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030027,
+              "type": 3,
+              "itemId": 40240008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030028,
+              "type": 3,
+              "itemId": 40240009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030029,
+              "type": 3,
+              "itemId": 40240010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010006,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030001,
+              "type": 3,
+              "itemId": 40220001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030002,
+              "type": 3,
+              "itemId": 40220002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030003,
+              "type": 3,
+              "itemId": 40220003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030004,
+              "type": 3,
+              "itemId": 40220004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030005,
+              "type": 3,
+              "itemId": 40220005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030006,
+              "type": 3,
+              "itemId": 40220006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030007,
+              "type": 3,
+              "itemId": 40220007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030008,
+              "type": 3,
+              "itemId": 40220008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030009,
+              "type": 3,
+              "itemId": 40220009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030010,
+              "type": 3,
+              "itemId": 40220010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030011,
+              "type": 3,
+              "itemId": 40220011,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030012,
+              "type": 3,
+              "itemId": 40220012,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030013,
+              "type": 3,
+              "itemId": 40220013,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030014,
+              "type": 3,
+              "itemId": 40220014,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030015,
+              "type": 3,
+              "itemId": 40220015,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030016,
+              "type": 3,
+              "itemId": 40220016,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030017,
+              "type": 3,
+              "itemId": 40220017,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030018,
+              "type": 3,
+              "itemId": 40220018,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030019,
+              "type": 3,
+              "itemId": 40220019,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030020,
+              "type": 3,
+              "itemId": 40240001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030021,
+              "type": 3,
+              "itemId": 40240002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030022,
+              "type": 3,
+              "itemId": 40240003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030023,
+              "type": 3,
+              "itemId": 40240004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030024,
+              "type": 3,
+              "itemId": 40240005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030025,
+              "type": 3,
+              "itemId": 40240006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030026,
+              "type": 3,
+              "itemId": 40240007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030027,
+              "type": 3,
+              "itemId": 40240008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030028,
+              "type": 3,
+              "itemId": 40240009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030029,
+              "type": 3,
+              "itemId": 40240010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030030,
+              "type": 3,
+              "itemId": 40240011,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030031,
+              "type": 3,
+              "itemId": 40240012,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030032,
+              "type": 3,
+              "itemId": 40240013,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030033,
+              "type": 3,
+              "itemId": 40240014,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030034,
+              "type": 3,
+              "itemId": 40240015,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030035,
+              "type": 3,
+              "itemId": 40240016,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030036,
+              "type": 3,
+              "itemId": 40240017,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030037,
+              "type": 3,
+              "itemId": 40240018,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030038,
+              "type": 3,
+              "itemId": 40240019,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030039,
+              "type": 3,
+              "itemId": 40240020,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030040,
+              "type": 3,
+              "itemId": 40240021,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030041,
+              "type": 3,
+              "itemId": 40240022,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030042,
+              "type": 3,
+              "itemId": 40240023,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030043,
+              "type": 3,
+              "itemId": 40240024,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010036,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030008,
+              "type": 3,
+              "itemId": 40220008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030009,
+              "type": 3,
+              "itemId": 40220009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030010,
+              "type": 3,
+              "itemId": 40220010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030011,
+              "type": 3,
+              "itemId": 40220011,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030012,
+              "type": 3,
+              "itemId": 40220012,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030013,
+              "type": 3,
+              "itemId": 40220013,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030014,
+              "type": 3,
+              "itemId": 40220014,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030015,
+              "type": 3,
+              "itemId": 40220015,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030016,
+              "type": 3,
+              "itemId": 40220016,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030017,
+              "type": 3,
+              "itemId": 40220017,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030018,
+              "type": 3,
+              "itemId": 40220018,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030019,
+              "type": 3,
+              "itemId": 40220019,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030020,
+              "type": 3,
+              "itemId": 40240001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030021,
+              "type": 3,
+              "itemId": 40240002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030022,
+              "type": 3,
+              "itemId": 40240003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030023,
+              "type": 3,
+              "itemId": 40240004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030024,
+              "type": 3,
+              "itemId": 40240005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030025,
+              "type": 3,
+              "itemId": 40240006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030026,
+              "type": 3,
+              "itemId": 40240007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030027,
+              "type": 3,
+              "itemId": 40240008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030028,
+              "type": 3,
+              "itemId": 40240009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030029,
+              "type": 3,
+              "itemId": 40240010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030030,
+              "type": 3,
+              "itemId": 40240011,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030031,
+              "type": 3,
+              "itemId": 40240012,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030032,
+              "type": 3,
+              "itemId": 40240013,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030033,
+              "type": 3,
+              "itemId": 40240014,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030034,
+              "type": 3,
+              "itemId": 40240015,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030035,
+              "type": 3,
+              "itemId": 40240016,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030036,
+              "type": 3,
+              "itemId": 40240017,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030037,
+              "type": 3,
+              "itemId": 40240018,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030038,
+              "type": 3,
+              "itemId": 40240019,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030039,
+              "type": 3,
+              "itemId": 40240020,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030040,
+              "type": 3,
+              "itemId": 40240021,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030041,
+              "type": 3,
+              "itemId": 40240022,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030042,
+              "type": 3,
+              "itemId": 40240023,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030043,
+              "type": 3,
+              "itemId": 40240024,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030044,
+              "type": 3,
+              "itemId": 40240025,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030045,
+              "type": 3,
+              "itemId": 40240026,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030046,
+              "type": 3,
+              "itemId": 40240027,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030047,
+              "type": 3,
+              "itemId": 40240028,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030048,
+              "type": 3,
+              "itemId": 40240029,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030049,
+              "type": 3,
+              "itemId": 40240030,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030052,
+              "type": 3,
+              "itemId": 40240033,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030054,
+              "type": 3,
+              "itemId": 40240035,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030057,
+              "type": 3,
+              "itemId": 40240038,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010008,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030020,
+              "type": 3,
+              "itemId": 40240001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030021,
+              "type": 3,
+              "itemId": 40240002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030022,
+              "type": 3,
+              "itemId": 40240003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030023,
+              "type": 3,
+              "itemId": 40240004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030024,
+              "type": 3,
+              "itemId": 40240005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030025,
+              "type": 3,
+              "itemId": 40240006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030026,
+              "type": 3,
+              "itemId": 40240007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030027,
+              "type": 3,
+              "itemId": 40240008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030028,
+              "type": 3,
+              "itemId": 40240009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030029,
+              "type": 3,
+              "itemId": 40240010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030030,
+              "type": 3,
+              "itemId": 40240011,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030031,
+              "type": 3,
+              "itemId": 40240012,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030032,
+              "type": 3,
+              "itemId": 40240013,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030033,
+              "type": 3,
+              "itemId": 40240014,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030034,
+              "type": 3,
+              "itemId": 40240015,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030035,
+              "type": 3,
+              "itemId": 40240016,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030036,
+              "type": 3,
+              "itemId": 40240017,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030037,
+              "type": 3,
+              "itemId": 40240018,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030038,
+              "type": 3,
+              "itemId": 40240019,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030039,
+              "type": 3,
+              "itemId": 40240020,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030040,
+              "type": 3,
+              "itemId": 40240021,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030041,
+              "type": 3,
+              "itemId": 40240022,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030042,
+              "type": 3,
+              "itemId": 40240023,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030043,
+              "type": 3,
+              "itemId": 40240024,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030044,
+              "type": 3,
+              "itemId": 40240025,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030045,
+              "type": 3,
+              "itemId": 40240026,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030046,
+              "type": 3,
+              "itemId": 40240027,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030047,
+              "type": 3,
+              "itemId": 40240028,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030048,
+              "type": 3,
+              "itemId": 40240029,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030049,
+              "type": 3,
+              "itemId": 40240030,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030050,
+              "type": 3,
+              "itemId": 40240031,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030051,
+              "type": 3,
+              "itemId": 40240032,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030052,
+              "type": 3,
+              "itemId": 40240033,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030053,
+              "type": 3,
+              "itemId": 40240034,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030054,
+              "type": 3,
+              "itemId": 40240035,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030055,
+              "type": 3,
+              "itemId": 40240036,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030056,
+              "type": 3,
+              "itemId": 40240037,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030057,
+              "type": 3,
+              "itemId": 40240038,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030058,
+              "type": 3,
+              "itemId": 40250001,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030059,
+              "type": 3,
+              "itemId": 40250002,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030060,
+              "type": 3,
+              "itemId": 40250003,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030061,
+              "type": 3,
+              "itemId": 40250004,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030062,
+              "type": 3,
+              "itemId": 40250005,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030063,
+              "type": 3,
+              "itemId": 40250006,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030064,
+              "type": 3,
+              "itemId": 40250007,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030065,
+              "type": 3,
+              "itemId": 40250008,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030066,
+              "type": 3,
+              "itemId": 40250009,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030067,
+              "type": 3,
+              "itemId": 40250010,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030068,
+              "type": 3,
+              "itemId": 40250011,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030069,
+              "type": 3,
+              "itemId": 40250012,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030070,
+              "type": 3,
+              "itemId": 40250013,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010009,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030030,
+              "type": 3,
+              "itemId": 40240011,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030031,
+              "type": 3,
+              "itemId": 40240012,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030032,
+              "type": 3,
+              "itemId": 40240013,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030033,
+              "type": 3,
+              "itemId": 40240014,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030034,
+              "type": 3,
+              "itemId": 40240015,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030035,
+              "type": 3,
+              "itemId": 40240016,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030036,
+              "type": 3,
+              "itemId": 40240017,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030037,
+              "type": 3,
+              "itemId": 40240018,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030038,
+              "type": 3,
+              "itemId": 40240019,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030039,
+              "type": 3,
+              "itemId": 40240020,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030040,
+              "type": 3,
+              "itemId": 40240021,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030041,
+              "type": 3,
+              "itemId": 40240022,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030042,
+              "type": 3,
+              "itemId": 40240023,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030043,
+              "type": 3,
+              "itemId": 40240024,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030044,
+              "type": 3,
+              "itemId": 40240025,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030045,
+              "type": 3,
+              "itemId": 40240026,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030046,
+              "type": 3,
+              "itemId": 40240027,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030047,
+              "type": 3,
+              "itemId": 40240028,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030048,
+              "type": 3,
+              "itemId": 40240029,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030049,
+              "type": 3,
+              "itemId": 40240030,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030050,
+              "type": 3,
+              "itemId": 40240031,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030051,
+              "type": 3,
+              "itemId": 40240032,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030052,
+              "type": 3,
+              "itemId": 40240033,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030053,
+              "type": 3,
+              "itemId": 40240034,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030054,
+              "type": 3,
+              "itemId": 40240035,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030055,
+              "type": 3,
+              "itemId": 40240036,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030056,
+              "type": 3,
+              "itemId": 40240037,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030057,
+              "type": 3,
+              "itemId": 40240038,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030058,
+              "type": 3,
+              "itemId": 40250001,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030059,
+              "type": 3,
+              "itemId": 40250002,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030060,
+              "type": 3,
+              "itemId": 40250003,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030061,
+              "type": 3,
+              "itemId": 40250004,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030062,
+              "type": 3,
+              "itemId": 40250005,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030063,
+              "type": 3,
+              "itemId": 40250006,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030064,
+              "type": 3,
+              "itemId": 40250007,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030065,
+              "type": 3,
+              "itemId": 40250008,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030066,
+              "type": 3,
+              "itemId": 40250009,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030067,
+              "type": 3,
+              "itemId": 40250010,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030068,
+              "type": 3,
+              "itemId": 40250011,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030069,
+              "type": 3,
+              "itemId": 40250012,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030070,
+              "type": 3,
+              "itemId": 40250013,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030071,
+              "type": 3,
+              "itemId": 40250014,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030072,
+              "type": 3,
+              "itemId": 40250015,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030073,
+              "type": 3,
+              "itemId": 40250016,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030074,
+              "type": 3,
+              "itemId": 40250017,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030075,
+              "type": 3,
+              "itemId": 40250018,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030076,
+              "type": 3,
+              "itemId": 40250019,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030077,
+              "type": 3,
+              "itemId": 40250020,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030078,
+              "type": 3,
+              "itemId": 40250021,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030079,
+              "type": 3,
+              "itemId": 40250022,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030080,
+              "type": 3,
+              "itemId": 40250023,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030081,
+              "type": 3,
+              "itemId": 40250024,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030082,
+              "type": 3,
+              "itemId": 40250025,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010010,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030044,
+              "type": 3,
+              "itemId": 40240025,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030045,
+              "type": 3,
+              "itemId": 40240026,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030046,
+              "type": 3,
+              "itemId": 40240027,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030047,
+              "type": 3,
+              "itemId": 40240028,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030048,
+              "type": 3,
+              "itemId": 40240029,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030049,
+              "type": 3,
+              "itemId": 40240030,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030050,
+              "type": 3,
+              "itemId": 40240031,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030051,
+              "type": 3,
+              "itemId": 40240032,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030052,
+              "type": 3,
+              "itemId": 40240033,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030053,
+              "type": 3,
+              "itemId": 40240034,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030054,
+              "type": 3,
+              "itemId": 40240035,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030055,
+              "type": 3,
+              "itemId": 40240036,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030056,
+              "type": 3,
+              "itemId": 40240037,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030057,
+              "type": 3,
+              "itemId": 40240038,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030058,
+              "type": 3,
+              "itemId": 40250001,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030059,
+              "type": 3,
+              "itemId": 40250002,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030060,
+              "type": 3,
+              "itemId": 40250003,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030061,
+              "type": 3,
+              "itemId": 40250004,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030062,
+              "type": 3,
+              "itemId": 40250005,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030063,
+              "type": 3,
+              "itemId": 40250006,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030064,
+              "type": 3,
+              "itemId": 40250007,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030065,
+              "type": 3,
+              "itemId": 40250008,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030066,
+              "type": 3,
+              "itemId": 40250009,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030067,
+              "type": 3,
+              "itemId": 40250010,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030068,
+              "type": 3,
+              "itemId": 40250011,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030069,
+              "type": 3,
+              "itemId": 40250012,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030070,
+              "type": 3,
+              "itemId": 40250013,
+              "value": 1,
+              "stock": 5,
+              "price": 6200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030071,
+              "type": 3,
+              "itemId": 40250014,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030072,
+              "type": 3,
+              "itemId": 40250015,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030073,
+              "type": 3,
+              "itemId": 40250016,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030074,
+              "type": 3,
+              "itemId": 40250017,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030075,
+              "type": 3,
+              "itemId": 40250018,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030076,
+              "type": 3,
+              "itemId": 40250019,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030077,
+              "type": 3,
+              "itemId": 40250020,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030078,
+              "type": 3,
+              "itemId": 40250021,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030079,
+              "type": 3,
+              "itemId": 40250022,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030080,
+              "type": 3,
+              "itemId": 40250023,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030081,
+              "type": 3,
+              "itemId": 40250024,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030082,
+              "type": 3,
+              "itemId": 40250025,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030083,
+              "type": 3,
+              "itemId": 40250026,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030084,
+              "type": 3,
+              "itemId": 40250027,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030085,
+              "type": 3,
+              "itemId": 40250028,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030086,
+              "type": 3,
+              "itemId": 40250029,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030087,
+              "type": 3,
+              "itemId": 40250030,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030088,
+              "type": 3,
+              "itemId": 40250031,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030089,
+              "type": 3,
+              "itemId": 40250032,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030090,
+              "type": 3,
+              "itemId": 40250033,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030091,
+              "type": 3,
+              "itemId": 40250034,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030092,
+              "type": 3,
+              "itemId": 40250035,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030093,
+              "type": 3,
+              "itemId": 40250036,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030094,
+              "type": 3,
+              "itemId": 40250037,
+              "value": 1,
+              "stock": 5,
+              "price": 6400,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010029,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 6,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030114,
+              "type": 3,
+              "itemId": 40320001,
+              "value": 1,
+              "stock": 10,
+              "price": 3050,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030115,
+              "type": 3,
+              "itemId": 40330001,
+              "value": 1,
+              "stock": 3,
+              "price": 12350,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030150,
+              "type": 3,
+              "itemId": 40220020,
+              "value": 1,
+              "stock": 5,
+              "price": 2050,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030151,
+              "type": 3,
+              "itemId": 40230001,
+              "value": 1,
+              "stock": 5,
+              "price": 8350,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030227,
+              "type": 3,
+              "itemId": 40130004,
+              "value": 1,
+              "stock": 3,
+              "price": 20000,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030228,
+              "type": 3,
+              "itemId": 40130005,
+              "value": 1,
+              "stock": 3,
+              "price": 20000,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030230,
+              "type": 3,
+              "itemId": 40130007,
+              "value": 1,
+              "stock": 3,
+              "price": 20000,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010033,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 1,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45020001,
+              "type": 2,
+              "itemId": 1421001,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020002,
+              "type": 2,
+              "itemId": 1421002,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020003,
+              "type": 2,
+              "itemId": 1421003,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020004,
+              "type": 2,
+              "itemId": 1421004,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020005,
+              "type": 2,
+              "itemId": 1421005,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020006,
+              "type": 2,
+              "itemId": 1421006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020007,
+              "type": 2,
+              "itemId": 1421007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020008,
+              "type": 2,
+              "itemId": 1421008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020009,
+              "type": 2,
+              "itemId": 1421009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020010,
+              "type": 2,
+              "itemId": 1421010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020011,
+              "type": 2,
+              "itemId": 1421011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020012,
+              "type": 2,
+              "itemId": 1421012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020013,
+              "type": 2,
+              "itemId": 1421013,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020014,
+              "type": 2,
+              "itemId": 1421014,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020015,
+              "type": 2,
+              "itemId": 1421015,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020016,
+              "type": 2,
+              "itemId": 1422001,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020017,
+              "type": 2,
+              "itemId": 1422002,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020018,
+              "type": 2,
+              "itemId": 1422003,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020019,
+              "type": 2,
+              "itemId": 1422004,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020020,
+              "type": 2,
+              "itemId": 1422005,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020021,
+              "type": 2,
+              "itemId": 1422006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020022,
+              "type": 2,
+              "itemId": 1422007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020023,
+              "type": 2,
+              "itemId": 1422008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020024,
+              "type": 2,
+              "itemId": 1422009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020025,
+              "type": 2,
+              "itemId": 1422010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020026,
+              "type": 2,
+              "itemId": 1422011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020027,
+              "type": 2,
+              "itemId": 1422012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020028,
+              "type": 2,
+              "itemId": 1422013,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020029,
+              "type": 2,
+              "itemId": 1422014,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020030,
+              "type": 2,
+              "itemId": 1422015,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020031,
+              "type": 2,
+              "itemId": 1422016,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501010034,
+          "shopType": 1,
+          "priceType": 1,
+          "randomNum": 2,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45020001,
+              "type": 2,
+              "itemId": 1421001,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020002,
+              "type": 2,
+              "itemId": 1421002,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020003,
+              "type": 2,
+              "itemId": 1421003,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020004,
+              "type": 2,
+              "itemId": 1421004,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020005,
+              "type": 2,
+              "itemId": 1421005,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020006,
+              "type": 2,
+              "itemId": 1421006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020007,
+              "type": 2,
+              "itemId": 1421007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020008,
+              "type": 2,
+              "itemId": 1421008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020009,
+              "type": 2,
+              "itemId": 1421009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020010,
+              "type": 2,
+              "itemId": 1421010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020011,
+              "type": 2,
+              "itemId": 1421011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020012,
+              "type": 2,
+              "itemId": 1421012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020013,
+              "type": 2,
+              "itemId": 1421013,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020014,
+              "type": 2,
+              "itemId": 1421014,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020015,
+              "type": 2,
+              "itemId": 1421015,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020016,
+              "type": 2,
+              "itemId": 1422001,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020017,
+              "type": 2,
+              "itemId": 1422002,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020018,
+              "type": 2,
+              "itemId": 1422003,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020019,
+              "type": 2,
+              "itemId": 1422004,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020020,
+              "type": 2,
+              "itemId": 1422005,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020021,
+              "type": 2,
+              "itemId": 1422006,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020022,
+              "type": 2,
+              "itemId": 1422007,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020023,
+              "type": 2,
+              "itemId": 1422008,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020024,
+              "type": 2,
+              "itemId": 1422009,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020025,
+              "type": 2,
+              "itemId": 1422010,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020026,
+              "type": 2,
+              "itemId": 1422011,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020027,
+              "type": 2,
+              "itemId": 1422012,
+              "value": 1,
+              "stock": 1,
+              "price": 5100,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020028,
+              "type": 2,
+              "itemId": 1422013,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020029,
+              "type": 2,
+              "itemId": 1422014,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020030,
+              "type": 2,
+              "itemId": 1422015,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45020031,
+              "type": 2,
+              "itemId": 1422016,
+              "value": 1,
+              "stock": 1,
+              "price": 10300,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030001,
+              "type": 3,
+              "itemId": 40220001,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030002,
+              "type": 3,
+              "itemId": 40220002,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030003,
+              "type": 3,
+              "itemId": 40220003,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030004,
+              "type": 3,
+              "itemId": 40220004,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030005,
+              "type": 3,
+              "itemId": 40220005,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030006,
+              "type": 3,
+              "itemId": 40220006,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030007,
+              "type": 3,
+              "itemId": 40220007,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030008,
+              "type": 3,
+              "itemId": 40220008,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030009,
+              "type": 3,
+              "itemId": 40220009,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030010,
+              "type": 3,
+              "itemId": 40220010,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030011,
+              "type": 3,
+              "itemId": 40220011,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030012,
+              "type": 3,
+              "itemId": 40220012,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030013,
+              "type": 3,
+              "itemId": 40220013,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030014,
+              "type": 3,
+              "itemId": 40220014,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030015,
+              "type": 3,
+              "itemId": 40220015,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030016,
+              "type": 3,
+              "itemId": 40220016,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030017,
+              "type": 3,
+              "itemId": 40220017,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030018,
+              "type": 3,
+              "itemId": 40220018,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030019,
+              "type": 3,
+              "itemId": 40220019,
+              "value": 1,
+              "stock": 5,
+              "price": 7200,
+              "goodsScore": 0
+            }
+          ]
+        },
+        {
+          "id": 4501500021,
+          "shopType": 1,
+          "priceType": 50,
+          "randomNum": 2,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45030226,
+              "type": 3,
+              "itemId": 40130001,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030231,
+              "type": 3,
+              "itemId": 40130008,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030161,
+              "type": 3,
+              "itemId": 40130013,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030162,
+              "type": 3,
+              "itemId": 40130016,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030165,
+              "type": 3,
+              "itemId": 40130019,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030169,
+              "type": 3,
+              "itemId": 40130023,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030177,
+              "type": 3,
+              "itemId": 40130031,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030178,
+              "type": 3,
+              "itemId": 40130032,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            },
+            {
+              "id": 45030179,
+              "type": 3,
+              "itemId": 40130033,
+              "value": 1,
+              "stock": 3,
+              "price": 7,
+              "goodsScore": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44000007,
+      "periodHours": 0,
+      "refreshCurrencyType": 50,
+      "refreshPrice": 0,
+      "refreshLimit": 0,
+      "shops": [
+        {
+          "id": 4502990003,
+          "shopType": 2,
+          "priceType": 99,
+          "randomNum": 0,
+          "maxTotal": 0,
+          "goods": [
+            {
+              "id": 45990010,
+              "type": 99,
+              "itemId": 0,
+              "value": 36,
+              "stock": 1,
+              "price": 0,
+              "goodsScore": 414,
+              "claimPeriod": "day",
+              "originalPrice": 1800
+            },
+            {
+              "id": 45990011,
+              "type": 99,
+              "itemId": 0,
+              "value": 60,
+              "stock": 1,
+              "price": 0,
+              "goodsScore": 690,
+              "claimPeriod": "day",
+              "originalPrice": 3000
+            },
+            {
+              "id": 45990012,
+              "type": 99,
+              "itemId": 0,
+              "value": 120,
+              "stock": 1,
+              "price": 0,
+              "goodsScore": 1380,
+              "claimPeriod": "week",
+              "originalPrice": 6000
+            },
+            {
+              "id": 45990013,
+              "type": 99,
+              "itemId": 0,
+              "value": 256,
+              "stock": 1,
+              "price": 0,
+              "goodsScore": 2944,
+              "claimPeriod": "week",
+              "originalPrice": 12800
+            },
+            {
+              "id": 45990014,
+              "type": 99,
+              "itemId": 0,
+              "value": 656,
+              "stock": 1,
+              "price": 0,
+              "goodsScore": 7544,
+              "claimPeriod": "month",
+              "originalPrice": 32800
+            },
+            {
+              "id": 45990015,
+              "type": 99,
+              "itemId": 0,
+              "value": 1300,
+              "stock": 1,
+              "price": 0,
+              "goodsScore": 14904,
+              "claimPeriod": "month",
+              "originalPrice": 64800
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "recharge": "zero-cost virtual claim; 18/30 RMB tiers daily, 60/128 weekly, 328/648 monthly; original nominal cents and Goods.goods_score retained",
+    "sundry": "original 8-hour rotation and 10-diamond refresh, max 30 refreshes per 8-hour bucket; stable account-specific selection"
+  }
+}

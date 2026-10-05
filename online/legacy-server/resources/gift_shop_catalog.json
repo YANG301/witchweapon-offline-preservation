@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "source": "Original client tables, channel_group=25, Gift bigsets 47000002 and 47000016",
+  "inputs": {
+    "shopbigset.txt": "8f6f0c84576b108f5e60655a33a4aceff002de2b878b7254507fbe5c30e432d3",
+    "shopset.txt": "15de9814a75d829856c2614a09ffbe14ee76be7f9bc5f56ffca6df65fedf3dfb",
+    "shop.txt": "3b9cf2b954ff5fac21196950ccc4f948c85016a09bde3485e64474b6253d0838",
+    "goods.txt": "b3cc78cb1fbcd14e8fd618903bac955d6ba0c97e9fbe1cf2cc883fe2bd74457c",
+    "item.txt": "74df3a598acb1e0d52ef95439bb3486406dcbce40334848f27ec14c4f4c8e3ce",
+    "monthcard.txt": "8e245185b2922df6c39548b40576c98e37530e0c91bf7fe3267ce0337050163c",
+    "dictionary.tsv": "74206b0c254ab4187b12be46b1b9fb1c48984bd5aef38b3ecf4c6df1e3dfc759"
+  },
+  "bigSetIds": [
+    47000002,
+    47000016
+  ],
+  "sets": [
+    {
+      "id": 44000025,
+      "periodHours": 24,
+      "shops": [
+        {
+          "id": 4502990011,
+          "originalPriceType": 99,
+          "goods": [
+            {
+              "id": 45030285,
+              "kind": "item",
+              "itemId": 40950044,
+              "originalLimit": 1,
+              "originalPrice": 1200,
+              "goodsScore": 276,
+              "name": ""
+            },
+            {
+              "id": 45030435,
+              "kind": "item",
+              "itemId": 40950052,
+              "originalLimit": 1,
+              "originalPrice": 1800,
+              "goodsScore": 414,
+              "name": "每日兵器福利"
+            },
+            {
+              "id": 45030619,
+              "kind": "item",
+              "itemId": 40940027,
+              "originalLimit": 1,
+              "originalPrice": 600,
+              "goodsScore": 138,
+              "name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44000074,
+      "periodHours": 0,
+      "shops": [
+        {
+          "id": 4502990025,
+          "originalPriceType": 99,
+          "goods": [
+            {
+              "id": 45030431,
+              "kind": "item",
+              "itemId": 40930019,
+              "originalLimit": 5,
+              "originalPrice": 12800,
+              "goodsScore": 2944,
+              "name": "星燃祈愿礼"
+            },
+            {
+              "id": 45030432,
+              "kind": "item",
+              "itemId": 40940009,
+              "originalLimit": 5,
+              "originalPrice": 32800,
+              "goodsScore": 7544,
+              "name": "赤炼祈愿礼"
+            },
+            {
+              "id": 45030433,
+              "kind": "item",
+              "itemId": 40950072,
+              "originalLimit": 5,
+              "originalPrice": 64800,
+              "goodsScore": 14904,
+              "name": "圣焰祈愿礼"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44000088,
+      "periodHours": 168,
+      "shops": [
+        {
+          "id": 4502990006,
+          "originalPriceType": 99,
+          "goods": [
+            {
+              "id": 45030434,
+              "kind": "item",
+              "itemId": 40950058,
+              "originalLimit": 2,
+              "originalPrice": 2500,
+              "goodsScore": 575,
+              "name": "每周耀晶盒"
+            },
+            {
+              "id": 45030301,
+              "kind": "item",
+              "itemId": 40950060,
+              "originalLimit": 2,
+              "originalPrice": 32800,
+              "goodsScore": 7544,
+              "name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44000006,
+      "periodHours": 0,
+      "shops": [
+        {
+          "id": 4502990002,
+          "originalPriceType": 99,
+          "goods": [
+            {
+              "id": 45030639,
+              "kind": "item",
+              "itemId": 40950096,
+              "originalLimit": 3,
+              "originalPrice": 12800,
+              "goodsScore": 2944,
+              "name": ""
+            },
+            {
+              "id": 45030620,
+              "kind": "item",
+              "itemId": 40940028,
+              "originalLimit": 0,
+              "originalPrice": 5000,
+              "goodsScore": 1150,
+              "name": ""
+            },
+            {
+              "id": 45030621,
+              "kind": "item",
+              "itemId": 40940029,
+              "originalLimit": 0,
+              "originalPrice": 11800,
+              "goodsScore": 2714,
+              "name": ""
+            }
+          ]
+        },
+        {
+          "id": 4502500025,
+          "originalPriceType": 50,
+          "goods": [
+            {
+              "id": 45030460,
+              "kind": "item",
+              "itemId": 40950076,
+              "originalLimit": 1,
+              "originalPrice": 200,
+              "goodsScore": 0,
+              "name": ""
+            },
+            {
+              "id": 45030461,
+              "kind": "item",
+              "itemId": 40950077,
+              "originalLimit": 1,
+              "originalPrice": 300,
+              "goodsScore": 0,
+              "name": ""
+            },
+            {
+              "id": 45030462,
+              "kind": "item",
+              "itemId": 40950078,
+              "originalLimit": 1,
+              "originalPrice": 300,
+              "goodsScore": 0,
+              "name": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44000061,
+      "periodHours": 0,
+      "shops": [
+        {
+          "id": 4502990023,
+          "originalPriceType": 99,
+          "goods": [
+            {
+              "id": 45030431,
+              "kind": "item",
+              "itemId": 40930019,
+              "originalLimit": 1,
+              "originalPrice": 12800,
+              "goodsScore": 2944,
+              "name": "星燃祈愿礼"
+            },
+            {
+              "id": 45030432,
+              "kind": "item",
+              "itemId": 40940009,
+              "originalLimit": 1,
+              "originalPrice": 32800,
+              "goodsScore": 7544,
+              "name": "赤炼祈愿礼"
+            },
+            {
+              "id": 45030433,
+              "kind": "item",
+              "itemId": 40950072,
+              "originalLimit": 1,
+              "originalPrice": 64800,
+              "goodsScore": 14904,
+              "name": "圣焰祈愿礼"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44000022,
+      "periodHours": 0,
+      "shops": [
+        {
+          "id": 4502990008,
+          "originalPriceType": 99,
+          "goods": [
+            {
+              "id": 45820001,
+              "kind": "monthCard",
+              "monthCardId": 1,
+              "days": 30,
+              "dailyItemId": 40950003,
+              "originalLimit": 0,
+              "originalPrice": 3000,
+              "goodsScore": 690,
+              "name": ""
+            },
+            {
+              "id": 45820006,
+              "kind": "monthCard",
+              "monthCardId": 6,
+              "days": 15,
+              "dailyItemId": 40950029,
+              "originalLimit": 1,
+              "originalPrice": 9800,
+              "goodsScore": 2254,
+              "name": "[fcb14f]特别行动补给卡[-]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "price": "free; no external payment routes",
+    "limited": "original quantity; 24h daily / 168h weekly China calendar reset",
+    "originalUnlimited": "The two unlimited item packages (num=0) get one free claim/account/China day to prevent farming; the unlimited monthly card renews only after expiry",
+    "monthCard": "Original 30/15-day daily chest contents are queued as attachment mail for each China-calendar day, including missed offline days on the next account request; both cards allow one free purchase per China-calendar month, only after the preceding card expires and all its mail has been queued"
+  }
+}

@@ -1,46 +1,62 @@
-# Generated or extracted content
-build/
-decoded/
-evidence/
-original_parts/
-overrides/
-pc_story_source/
-tools/
-inputs/
-
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-
-# Packages, executables and signing material
-*.apk
-*.xapk
-*.obb
-*.exe
+# Credentials and local configuration
+.local/
+**/.local/
+.env
+.env.*
+*.env
+!*.env.example
+*.key
+*.pem
+*.der
+*.p12
+*.pfx
 *.jks
 *.keystore
-*.p12
-*.pem
-*.key
-*.crt
+*.credentials
 
-# Local work notes superseded by README.md and STATUS.md
-CURRENT_PROGRESS.md
-CURSOR_*
-FULL_OFFLINE_PLAN.md
-PAUSE_CHECKPOINT.md
-PROJECT.md
-REMAINING_WORK.md
-RESUME_AUDIT.md
-*_REPORT.md
-STORY_DIRECTORY_COMPARISON.md
+# Player data and running services
+**/offline_save_v1.json
+online/server/state/
+online/server/storage/
+online/server/chat-storage/
+online/legacy-server/data/
+online/legacy-server/save/
+**/*.log
+**/*.pid
 
-# Editor and OS files
+# Build artifacts and external game inputs
+**/build/
+**/dist/
+**/inputs/
+**/generated/
+*.apk
+*.apks
+*.aab
+*.ab
+*.exe
+*.dll
+*.class
+*.dex
+*.jar
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Language and editor caches
+**/__pycache__/
+*.pyc
+*.pyo
+**/.venv/
+**/node_modules/
+**/.pytest_cache/
+**/.DS_Store
 .idea/
 .vscode/
-.DS_Store
-Thumbs.db
-*.log
-
-*_AUDIT.md
+**/Library/
+**/Temp/
+**/Obj/
+**/Logs/
+**/UserSettings/
+*.sln
+*.csproj

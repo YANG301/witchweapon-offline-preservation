@@ -1,86 +1,50 @@
-# 魔女兵器单机保存版
+# 魔女兵器保存工程
 
-这是《魔女兵器》国服 Android 2.0.1 的单机化工程。客户端通过本地响应和本地存档运行，不依赖已经停运的游戏服务器。
+本仓库保留原有单机保存版，并整理后续开发的在线服务、安卓客户端补丁、本地模式和本地活动实验代码。
 
-目前已接入的主要内容：
+本次整合已经完成本地审阅，并获得上传原仓库的确认。整理范围是源码、文档和构建入口，不更新正式服务、不发布 APK，也不改玩家数据。整理过程与代码调整见 [审阅说明](docs/REVIEW.md)。
 
-- 本地建号、登录、存档和重启恢复
-- 149 个可见剧情入口，缺失演出资源从 PC 保存版补回
-- 一轮 12 关结界迷宫和训练营
-- 角色与武器战斗、四武器能量、主动技能、部分专属技能和敌人机制
-- 角色养成、升阶、升星、羁绊、装备和背包
-- 本地抽卡、免费补给、材料回收与礼包
-- 主界面角色展示、服装和动作保存
+## 从哪里开始
 
-最新测试包的信息见 [STATUS.md](STATUS.md)。
+| 想了解的内容 | 入口 |
+| --- | --- |
+| 本次整理了什么、哪些地方需要确认 | [审阅说明](docs/REVIEW.md) |
+| 工程结构与各服务职责 | [架构与目录](docs/ARCHITECTURE.md) |
+| 如何构建、哪些命令可以直接验证 | [构建与验证](docs/BUILD.md) |
+| 现有功能、已知缺口和待办 | [功能状态](docs/STATUS.md) |
+| APK、资源与签名等外部输入 | [输入资料](docs/INPUTS.md) |
+| 历次更新的简要记录 | [更新记录](docs/CHANGELOG.md) |
+| 整理来源、文件排除和校验清单 | [源码来源](docs/SOURCE_MAP.md) |
+| 原作者单机版本的说明 | [原单机 README](offline-preservation/README.md) |
 
-## 环境
-
-- Windows 10/11
-- Python 3.13
-- JDK 17
-- Android SDK Platform 34
-- Android Build Tools 36.1.0
-- Il2CppDumper，用于从原 APK 生成 `script.json` 和 `dump.cs`
-- 雷电模拟器 9，可选，仅用于运行验收
-
-安装 Python 依赖：
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-```
-
-## 输入文件
-
-把原始文件放在以下位置：
+## 目录
 
 ```text
-inputs/20240516161158_mnbq.apk
-inputs/Witch Weapon.exe
+offline-preservation/        原仓库单机源码，文件内容保持原样
+online/
+  server/                   Go 账号网关、管理后台、邮件与聊天服务
+  legacy-server/            Java 原版游戏协议与玩法服务
+  android-client/           Android 桥接、Lua 修复及资源处理工具
+  deploy/update-server/     独立的签名资源更新服务
+  scripts/                  构建、生成、验证和历史整合脚本
+  tools/                    战斗、迷宫等数据处理与检查工具
+  data/                     小型剧情原型的只读示例数据
+local-mode/                 同一 APK 中的本地/在线区服切换代码
+experiments/                 未合入正式版的活动、石板实验
+docs/                       当前说明与来源清单
+tools/                      审阅稿静态校验工具
 ```
 
-文件校验值和可选环境变量见 [INPUTS.md](INPUTS.md)。原 APK、PC 程序、生成资源、签名文件和 APK 成品不放在源码提交中。
+在线版沿用原游戏界面和资源读取方式；Go 和 Java 分担服务器功能。日常 Lua、配置与可覆盖的 AssetBundle 修复通过签名补丁更新，Android 桥接、DEX、原生代码或 APK 元数据变化仍需重新构建安装包。
 
-## 处理顺序
+原游戏资源、完整 APK、玩家存档、密钥、运行日志和 Unity 资源恢复工程没有打进此源码审阅稿。构建安卓完整包仍需要管理者提供对应的原始资料和固定版本输入，详见 [输入资料](docs/INPUTS.md)。
 
-剧情资源首次准备：
+## 版本说明
 
-```powershell
-python inspect_game.py
-python decode_config.py
-python pc_story_source.py
-python pc_story_content_match.py
-python pc_story_match.py
-python pc_exact_alignment.py
-python pc_role_restore.py
-python pc_graph_repairs.py
-python pc_story_restore.py
-python pc_lesson_convert.py
-python pc_story_restore.py
-```
+截至本次整理，已有 APK 基线为 **v125 / versionCode 20043125**，资源补丁基线为 **签名序号 191**。Java 玩法服务后续还包含抽卡持久化、升星和称号修复。APK 版本、资源补丁序号和服务端构建是三个独立编号，不能互相替代。
 
-生成离线配置并构建：
+这里的代码快照不等于全部线上二进制的逐字节复现：历史整合脚本会对桥接源码做转换，并依赖指定 APK、资源清单与签名输入。[功能状态](docs/STATUS.md) 区分了代码现状、此前验收和本轮验证。
 
-```powershell
-python prepare_offline.py
-python build_apk.py
-```
+## 许可
 
-输出文件为 `build/witchweapon-stage1-test.apk`。构建脚本会生成独立包名 `com.codex.witchweapon.local`，不会覆盖原游戏安装。
-
-## 代码分工
-
-- `OfflineApplication.java`：本地 HTTP 响应入口
-- `LocalSave.java`：本地账号和进度存档
-- `LocalEconomy.java`：养成、背包、抽卡和补给事务
-- `offline_combat.py`、`offline_enemies.py`、`offline_weapon_rules.py`：战斗和技能数据
-- `offline_maze.py`、`offline_maze_round.py`：12 关迷宫流程
-- `offline_story.py`、`pc_*.py`：剧情目录和 PC 资源转换
-- `offline_progression.py`、`offline_roster.py`：角色、武器和养成数据
-- `offline_responses.json`：生成后的本地服务响应集
-
-## 许可证
-
-本工程自行编写的源码和文档采用 [CC0 1.0 Universal](LICENSE)，使用时不要求署名或保留许可证文本。原游戏内容的权利说明见 [NOTICE.md](NOTICE.md)。
+保留原仓库的 [CC0 1.0 Universal](LICENSE)。游戏原始程序、美术、音乐、剧情和商标的权利归属见 [第三方内容说明](NOTICE.md)。
