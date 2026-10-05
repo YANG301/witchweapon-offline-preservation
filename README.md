@@ -2,7 +2,15 @@
 
 本仓库保留原有单机保存版，并整理后续开发的在线服务、安卓客户端补丁、本地模式和本地活动实验代码。
 
-本次整合已经完成本地审阅，并获得上传原仓库的确认。整理范围是源码、文档和构建入口，不更新正式服务、不发布 APK，也不改玩家数据。整理过程与代码调整见 [审阅说明](docs/REVIEW.md)。
+本次源码整合已经完成审阅并上传原仓库，保留原有提交历史。整理过程与代码调整见 [审阅说明](docs/REVIEW.md)。
+
+## 下载与官网
+
+- [官网下载与项目介绍](https://witchweapon.wiki/)
+- [GitHub Releases：v125 安卓测试版](https://github.com/YANG301/witchweapon-offline-preservation/releases/tag/v125)
+- [发布说明与安装包校验](docs/RELEASES.md)
+
+当前完整 APK 为在线／本地双区服 v125，适用于 Android 7.0 及以上。在线区服可直接连接；本地模式需要另外运行电脑端服务。安装包通过 Releases 分发，不放入 Git 源码历史。
 
 ## 从哪里开始
 
